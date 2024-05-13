@@ -1,0 +1,955 @@
+<!-- Annuncio -->
+
+<!doctype html>
+<html lang="it" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://dariscappelletti.github.io/CohesionID-Docs/Integrazione-Classe-C-Sharp/">
+      
+      
+        <link rel="prev" href="../Tipologie-e-livelli-di-accesso-disponibili-in-CohesionID/">
+      
+      
+        <link rel="next" href="../Integrazione-C-Sharp-Core/">
+      
+      
+      <link rel="icon" href="https://raw.githubusercontent.com/DarisCappelletti/CohesionID-Docs/main/Assets/img/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.22">
+    
+    
+      
+        <title>Integrazione C# - CohesionID-Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.732c4fb1.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#integrazione-classe-c" class="md-skip">
+          Vai al contenuto
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+              <button class="md-banner__button md-icon" aria-label="Non mostrare più">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+              </button>
+            
+            
+Hai bisogno di assistenza con Cohesion? <a href="mailto:integrazioneCohesion@regione.marche-it?subject=Assistenza cohesion">Contattaci</a>
+
+          </div>
+          
+            <script>var content,el=document.querySelector("[data-md-component=announce]");el&&(content=el.querySelector(".md-typeset"),__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0))</script>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Intestazione">
+    <a href="https://www.regione.marche.it/" title="CohesionID-Docs" class="md-header__button md-logo" aria-label="CohesionID-Docs" data-md-component="logo">
+      
+  <img src="https://raw.githubusercontent.com/DarisCappelletti/CohesionID-Docs/main/Assets/img/regione-marche-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CohesionID-Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Integrazione C#
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Cancella" aria-label="Cancella" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inizializza la ricerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href=".." class="md-tabs__link">
+          
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../Pubbliche-Amministrazioni-e-Imprese/" class="md-tabs__link">
+          
+  
+  Integrare Cohesion
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../FAQ/" class="md-tabs__link">
+        
+  
+    
+  
+  FAQ
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigazione" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://www.regione.marche.it/" title="CohesionID-Docs" class="md-nav__button md-logo" aria-label="CohesionID-Docs" data-md-component="logo">
+      
+  <img src="https://raw.githubusercontent.com/DarisCappelletti/CohesionID-Docs/main/Assets/img/regione-marche-logo.png" alt="logo">
+
+    </a>
+    CohesionID-Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cohesion id
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Integrare Cohesion
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Integrare Cohesion
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Pubbliche-Amministrazioni-e-Imprese/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integrare Cohesion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Flusso-di-Autenticazione/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Flusso di autenticazione
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Parametri-della-Richiesta-di-Autenticazione/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametri della richiesta di autenticazione
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tipologie-e-livelli-di-accesso-disponibili-in-CohesionID/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tipologie e livelli di accesso disponibili
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Documentazione tecnica
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Documentazione tecnica
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/regione-marche/Cohesion2NETCore8Library" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integrazione .NET Core 8
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Integrazione C#
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Integrazione-C-Sharp-Core/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integrazione C# Core
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Integrazione-Servlet-Java/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integrazione Java
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/regione-marche/Cohesion2PHPLibrary" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integrazione PHP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/regione-marche/Cohesion2PythonIntegrationTest" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integrazione Phyton
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Rinnovo-del-Token/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rinnovo del Token
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://colab.research.google.com/gist/xavbeta/f710b69eba7843c006ff11e561e1c2c1/configurazione-integrazione-cohesion.ipynb" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuratore integrazioni
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FAQ/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="integrazione-classe-c"><strong>Integrazione classe C#</strong><a class="headerlink" href="#integrazione-classe-c" title="Permanent link">&para;</a></h1>
+<p>Con il presente si vuole fornire una panoramica completa delle modalità di integrazione e delle configurazioni di utilizzo del Service Provider fornito con Cohesion in applicativi web che richiedono autenticazione e profilazione utente.
+Verrà in dettaglio descritta la procedura di installazione in ambiente IIS mediante classe C# CohesionSSO.cs e la configurazione per l’utilizzo classico ed il funzionamento in modalità federata SAML2.0.
+Questa modalità è sempre preferibile e in particolare è necessaria qualora non venga rilasciato all’ente un certificato personale per la comunicazione con Cohesion.</p>
+<blockquote>
+<p><strong><a href="https://github.com/regione-marche/Cohesion2NETFramework">Scarica l'applicazione di test e la classe di integrazione</a></strong></p>
+</blockquote>
+<p>Per integrare l’autenticazione in Cohesion nel proprio sito è sufficiente aggiungere la classe C# CohesionSSO.cs al proprio progetto .NET e richiamare i metodi ValidateFE e LogoutFE rispettivamente nel codice della pagina che gestisce la form authentication e della pagina di logout. I metodi vanno richiamati dopo aver inizializzato la classe mediante i costruttori disponibili.
+Di seguito un esempio di codice da inserire nella pagina di form authentication:</p>
+<p><code>CohesionSSO cohesionSSO = new CohesionSSO(Request, Response, Session);
+ cohesionSSO.ValidateFE();</code></p>
+<p>Una volta autenticati il token di autenticazione verrà automaticamente salvato nella variabile di sessione “<em>TOKEN</em>”.</p>
+<p>In <strong>TestCohesion.zip</strong> è presente un esempio di progetto .NET 2010 in cui si mostra come integrare Cohesion mediante la classe CohesionSSO.</p>
+<p><strong>La classe dispone di 2 costruttori</strong>:</p>
+<hr />
+<p><strong>Costruttore base</strong> con i soli parametri per recuperare le variabili di richiesta http, risposta http e sessione http.
+In questo modo tutti i parametri richiesti dovranno essere specificati nel web.config. </p>
+<blockquote>
+<p>In particolare andranno impostate le seguenti chiavi nel web.config:</p>
+</blockquote>
+<ul>
+<li><strong>sso.check.url</strong> : parametro fisso della pagina SSO di Cohesion.</li>
+<li><strong>webCheckSessionSSO</strong> : parametro fisso della pagina di recupero token di autenticazione.</li>
+<li><strong>sso.additionalData</strong> : parametri opzionali di autenticazione.</li>
+<li><strong>site.URLLogout</strong> : url della propria pagina di logout relativo alla posizione della pagina protetta; è possibile specificare il parametro ReturnUrl con l'url della pagina a cui ritornare una volta effettuato il logout.</li>
+<li><strong>site.id_sito</strong>: IDSito fornito da Regione Marche la momento della abilitazione alla integrazione cohesion.</li>
+<li><strong>site.IndexURL</strong>: url della propria pagina a cui ritornare in caso di errore di autenticazione.</li>
+</ul>
+<p>Esempio di codice di configurazione in <strong>web.config</strong>:</p>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="n">appSettings</span><span class="o">&gt;</span>
+<span class="w"> </span><span class="o">&lt;</span><span class="k">add</span><span class="w"> </span><span class="n">key</span><span class="o">=</span><span class="s">&quot;sso.check.url&quot;</span><span class="w"> </span><span class="k">value</span><span class="o">=</span><span class="s">&quot;http://cohesion2.regione.marche.it/SSO/Check.aspx&quot;</span><span class="o">/&gt;</span>
+<span class="w"> </span><span class="o">&lt;</span><span class="k">add</span><span class="w"> </span><span class="n">key</span><span class="o">=</span><span class="s">&quot;sso.webCheckSessionSSO&quot;</span><span class="w"> </span><span class="k">value</span><span class="o">=</span><span class="s">&quot;https://cohesion2.regione.marche.it/SSO/webCheckSessionSSO.aspx&quot;</span><span class="o">/&gt;</span>
+<span class="w"> </span><span class="o">&lt;</span><span class="k">add</span><span class="w"> </span><span class="n">key</span><span class="o">=</span><span class="s">&quot;sso.additionalData&quot;</span><span class="w"> </span><span class="k">value</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="o">/&gt;</span>
+<span class="w"> </span><span class="o">&lt;</span><span class="k">add</span><span class="w"> </span><span class="n">key</span><span class="o">=</span><span class="s">&quot;site.URLLogout&quot;</span><span class="w"> </span><span class="k">value</span><span class="o">=</span><span class="s">&quot;../Logout.aspx?ReturnUrl=index.aspx&quot;</span><span class="o">/&gt;</span>
+<span class="w"> </span><span class="o">&lt;</span><span class="k">add</span><span class="w"> </span><span class="n">key</span><span class="o">=</span><span class="s">&quot;site.id_sito&quot;</span><span class="w"> </span><span class="k">value</span><span class="o">=</span><span class="s">&quot;MYSITE&quot;</span><span class="o">/&gt;</span>
+<span class="w"> </span><span class="o">&lt;</span><span class="k">add</span><span class="w"> </span><span class="n">key</span><span class="o">=</span><span class="s">&quot;site.IndexURL&quot;</span><span class="w"> </span><span class="k">value</span><span class="o">=</span><span class="s">&quot;index.aspx&quot;</span><span class="o">/&gt;</span>
+<span class="o">&lt;/</span><span class="n">appSettings</span><span class="o">&gt;</span>
+</code></pre></div>
+
+<hr />
+<p><strong>Costruttore completo</strong> con tutti i parametri richiesti:
+In questo modo non si avrà bisogno di specificare i parametri nel web.config ma si passeranno direttamente al costruttore:</p>
+<p><code>CohesionSSO cohesionSSO = new CohesionSSO(request, response, session,
+SSOCheckUrl, webCheckSessionSSOUrl, additionalData, indexUrl);</code></p>
+<hr />
+<p>Di seguito viene descritto un esempio di configurazione di questi parametri per utilizzare rispettivamente la modalità di funzionamento classica di Cohesion e la modalità di funzionamento federato mediante standard SAML2.0</p>
+<p><strong>Modalità di funzionamento SAML2.0</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="n">appSettings</span><span class="o">&gt;</span>
+<span class="w"> </span><span class="o">&lt;</span><span class="k">add</span><span class="w"> </span><span class="n">key</span><span class="o">=</span><span class="s">&quot;sso.check.url&quot;</span><span class="w"> </span><span class="k">value</span><span class="o">=</span><span class="s">&quot;http://cohesion2.regione.marche.it/SPManager/WAYF.aspx&quot;</span><span class="o">/&gt;</span>
+<span class="w"> </span><span class="o">&lt;</span><span class="k">add</span><span class="w"> </span><span class="n">key</span><span class="o">=</span><span class="s">&quot;sso.webCheckSessionSSO&quot;</span><span class="w"> </span><span class="k">value</span><span class="o">=</span><span class="s">&quot;https://cohesion2.regione.marche.it/SPManager/webCheckSessionSSO.aspx&quot;</span><span class="o">/&gt;</span>
+<span class="w"> </span><span class="o">&lt;</span><span class="k">add</span><span class="w"> </span><span class="n">key</span><span class="o">=</span><span class="s">&quot;site.URLLogout&quot;</span><span class="w"> </span>
+<span class="w"> </span><span class="k">value</span><span class="o">=</span><span class="w"> </span><span class="s">&quot;../Logout.aspx?ReturnUrl=https%3A%2F%2Fcohesion2.regione.marche.it%2FSPManager%2FLogout.aspx&quot;</span><span class="o">/&gt;</span>
+<span class="w"> </span><span class="o">&lt;</span><span class="k">add</span><span class="w"> </span><span class="n">key</span><span class="o">=</span><span class="s">&quot;site.IndexURL&quot;</span><span class="w"> </span><span class="k">value</span><span class="o">=</span><span class="s">&quot;index.aspx&quot;</span><span class="o">/&gt;</span>
+<span class="w"> </span><span class="o">&lt;</span><span class="k">add</span><span class="w"> </span><span class="n">key</span><span class="o">=</span><span class="s">&quot;site.id_sito&quot;</span><span class="w"> </span><span class="k">value</span><span class="o">=</span><span class="s">&quot;MYSITE&quot;</span><span class="o">/&gt;</span>
+<span class="w"> </span><span class="o">&lt;</span><span class="k">add</span><span class="w"> </span><span class="n">key</span><span class="o">=</span><span class="s">&quot;sso.additionalData&quot;</span><span class="w"> </span><span class="k">value</span><span class="o">=</span><span class="s">&quot;http://YOURHOST/YOURSITE/Logout.aspx&quot;</span><span class="o">/&gt;</span>
+<span class="o">&lt;/</span><span class="n">appSettings</span><span class="o">&gt;</span>
+</code></pre></div>
+
+<p>Di seguito verranno descritti i campi che è possibile cambiare:</p>
+<ul>
+<li><strong>site.URLLogout</strong>: Contiene l’url della pagina di Logout dalla posizione della pagina autenticata. A differenza della modalità classica non è però possibile cambiare il parametro ReturnUrl in quanto strettamente dipendente alle funzionalità di logout di SAML.</li>
+<li><strong>site.IndexURL</strong>: se presente deve contenere l’url della propria pagina a cui ritornare in caso di errore di autenticazione.</li>
+<li><strong>sso.additionalData</strong>: Deve contenere obbligatoriamente il percorso completo della propria pagina di logout affinché il logout SAML funzioni correttamente. Può contenere altri due parametri opzionali: i livelli di autenticazione da mostrare (parametro AuthRestriction) e un flag per mostrare solo i meccanismi di accesso federato SPID, CIEID, CNS e l'accesso tramite dominio. I vari parametri vanno separati da punto e virgola ";".</li>
+</ul>
+<p>Per approfondimenti in merito alla configurazione dei parametri addizionali, è possibile far riferimento alla pagina <a href="/CohesionID-Docs/Parametri-della-Richiesta-di-Autenticazione">Parametri della Richiesta di Autenticazione</a></p>
+<blockquote>
+<p>[Opzionale]</p>
+</blockquote>
+<p>Prima dell'URL di logout è possibile inserire la stringa AuthRestricion=0,1,2,3 dove i valori 0,1,2,3 indicano i livelli di autenticazione da mostrare nella pagina di login dell’Idp federato selezionato, in particolare:
+* 0 indica di mostrare l'autenticazione SAML "Password"
+* 1 indica di mostrare l'autenticazione SAML "Smartcard"
+* 2 indica di mostrare l'autenticazione SAML "SmartcardPKI"
+* 3 indica di mostrare l'autenticazione SAML "Kerberos"</p>
+<p>I seguenti valori sono standard SAML e dovrebbero essere riconosciuti per ogni IdP federato selezionato. Nel caso venga scelto Cohesion come Idp allora i valori saranno interpretati con le modalità di autenticazione già descritte nel punto a), a meno che non venga specificato l'altro parametro opzionale UType=c. E’ possibile nascondere o visualizzare le modalità di autenticazione togliendo o aggiungendo i rispettivi valori separati da una virgola. L’ordine non è influente.</p>
+<blockquote>
+<p>[Opzionale]</p>
+</blockquote>
+<p>Dopo l'URL di logout è possibile inserire la stringa eidas=1. L'inserimento di questa stringa abilita la login eIDAS nel sistema di autenticazione SAML 2.0 di Cohesion. Questa opzione è compatibile con tutte le altre fin qui indicate. 
+Es. AuthRestriction=2,1;http://host/YOURSITE/Logout.aspx;UType=c;eidas=1</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Piede" >
+        
+          
+          <a href="../Tipologie-e-livelli-di-accesso-disponibili-in-CohesionID/" class="md-footer__link md-footer__link--prev" aria-label="Precedente: Tipologie e livelli di accesso disponibili">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Precedente
+              </span>
+              <div class="md-ellipsis">
+                Tipologie e livelli di accesso disponibili
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../Integrazione-C-Sharp-Core/" class="md-footer__link md-footer__link--next" aria-label="Successivo: Integrazione C# Core">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Successivo
+              </span>
+              <div class="md-ellipsis">
+                Integrazione C# Core
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.footer"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.5cfa9459.min.js"></script>
+      
+    
+  </body>
+</html>

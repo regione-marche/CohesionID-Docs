@@ -1,0 +1,1187 @@
+<!-- Annuncio -->
+
+<!doctype html>
+<html lang="it" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://dariscappelletti.github.io/CohesionID-Docs/Flusso-di-Autenticazione/">
+      
+      
+        <link rel="prev" href="../Pubbliche-Amministrazioni-e-Imprese/">
+      
+      
+        <link rel="next" href="../Parametri-della-Richiesta-di-Autenticazione/">
+      
+      
+      <link rel="icon" href="https://raw.githubusercontent.com/DarisCappelletti/CohesionID-Docs/main/Assets/img/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.22">
+    
+    
+      
+        <title>Flusso di autenticazione - CohesionID-Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.732c4fb1.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#flusso-di-autenticazione" class="md-skip">
+          Vai al contenuto
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+              <button class="md-banner__button md-icon" aria-label="Non mostrare più">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+              </button>
+            
+            
+Hai bisogno di assistenza con Cohesion? <a href="mailto:integrazioneCohesion@regione.marche-it?subject=Assistenza cohesion">Contattaci</a>
+
+          </div>
+          
+            <script>var content,el=document.querySelector("[data-md-component=announce]");el&&(content=el.querySelector(".md-typeset"),__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0))</script>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Intestazione">
+    <a href="https://www.regione.marche.it/" title="CohesionID-Docs" class="md-header__button md-logo" aria-label="CohesionID-Docs" data-md-component="logo">
+      
+  <img src="https://raw.githubusercontent.com/DarisCappelletti/CohesionID-Docs/main/Assets/img/regione-marche-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CohesionID-Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Flusso di autenticazione
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Cancella" aria-label="Cancella" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inizializza la ricerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href=".." class="md-tabs__link">
+          
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../Pubbliche-Amministrazioni-e-Imprese/" class="md-tabs__link">
+          
+  
+  Integrare Cohesion
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../FAQ/" class="md-tabs__link">
+        
+  
+    
+  
+  FAQ
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigazione" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://www.regione.marche.it/" title="CohesionID-Docs" class="md-nav__button md-logo" aria-label="CohesionID-Docs" data-md-component="logo">
+      
+  <img src="https://raw.githubusercontent.com/DarisCappelletti/CohesionID-Docs/main/Assets/img/regione-marche-logo.png" alt="logo">
+
+    </a>
+    CohesionID-Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cohesion id
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Integrare Cohesion
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Integrare Cohesion
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Pubbliche-Amministrazioni-e-Imprese/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integrare Cohesion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Flusso di autenticazione
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Flusso di autenticazione
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-lutente-richiede-di-effettuare-il-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. L'utente richiede di effettuare il login
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-lutente-sceglie-lidp" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. L'utente sceglie l'IdP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-accesso-allapplicativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Accesso all'applicativo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auth-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      Auth Request
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cosa-contiene-il-token-cohesion-dopo-lautenticazione" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cosa contiene il token Cohesion dopo l'autenticazione?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#come-effettuare-il-logout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Come effettuare il logout?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Parametri-della-Richiesta-di-Autenticazione/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametri della richiesta di autenticazione
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tipologie-e-livelli-di-accesso-disponibili-in-CohesionID/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tipologie e livelli di accesso disponibili
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Documentazione tecnica
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Documentazione tecnica
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/regione-marche/Cohesion2NETCore8Library" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integrazione .NET Core 8
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Integrazione-Classe-C-Sharp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integrazione C#
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Integrazione-C-Sharp-Core/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integrazione C# Core
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Integrazione-Servlet-Java/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integrazione Java
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/regione-marche/Cohesion2PHPLibrary" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integrazione PHP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/regione-marche/Cohesion2PythonIntegrationTest" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integrazione Phyton
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Rinnovo-del-Token/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rinnovo del Token
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://colab.research.google.com/gist/xavbeta/f710b69eba7843c006ff11e561e1c2c1/configurazione-integrazione-cohesion.ipynb" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuratore integrazioni
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FAQ/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-lutente-richiede-di-effettuare-il-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. L'utente richiede di effettuare il login
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-lutente-sceglie-lidp" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. L'utente sceglie l'IdP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-accesso-allapplicativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Accesso all'applicativo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auth-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      Auth Request
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cosa-contiene-il-token-cohesion-dopo-lautenticazione" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cosa contiene il token Cohesion dopo l'autenticazione?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#come-effettuare-il-logout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Come effettuare il logout?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="flusso-di-autenticazione"><strong>Flusso di Autenticazione</strong><a class="headerlink" href="#flusso-di-autenticazione" title="Permanent link">&para;</a></h1>
+<h2 id="1-lutente-richiede-di-effettuare-il-login"><strong>1. L'utente richiede di effettuare il login</strong><a class="headerlink" href="#1-lutente-richiede-di-effettuare-il-login" title="Permanent link">&para;</a></h2>
+<p>L'utente desidera effettuare l'accesso ad un'applicazione che integra il sistema Cohesion, cliccando sul <em>login</em> viene reindirizzato al sistema Cohesion ID.</p>
+<h2 id="2-lutente-sceglie-lidp"><strong>2. L'utente sceglie l'IdP</strong><a class="headerlink" href="#2-lutente-sceglie-lidp" title="Permanent link">&para;</a></h2>
+<p>L'utente seleziona l'<em>Identity Provider</em> per effettuare la procedura di riconoscimento. 
+Cohesion genera una richiesta di accesso in cui ottiene il <strong>Codice Fiscale</strong> e l'<strong>ID Sessione</strong> dell'utente.</p>
+<h2 id="3-accesso-allapplicativo"><strong>3. Accesso all'applicativo</strong><a class="headerlink" href="#3-accesso-allapplicativo" title="Permanent link">&para;</a></h2>
+<p>Cohesion effettua una seconda chiamata al fine ottenere gli attributi dell'utente recuperati dall'Identity Provider scelto dall'utente.</p>
+<p>L'utente viene reindirizzato all'applicazione con un <em>token proprietario</em>, contente gli attributi necessari all'accesso.</p>
+<h2 id="auth-request"><strong>Auth Request</strong><a class="headerlink" href="#auth-request" title="Permanent link">&para;</a></h2>
+<p>Per accedere ai servizi offerti da CohesionID, è necessario effettuare una chiamata in GET all'indirizzo <a href="https://colab.research.google.com/corgiredirector?site=https%3A%2F%2Fcohesion2.regione.marche.it%2FSPManager%2FWAYF.aspx">https://cohesion2.regione.marche.it/SPManager/WAYF.aspx</a> con un parametro <em>AUTH</em> contenente dei parametri di autenticazione come quelli dell'esempio in basso.</p>
+<p>Il chiamante, in questo esempio, sarà <em>example.cohesion.it</em>:</p>
+<div class="codehilite"><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; ?&gt;</span>
+<span class="nt">&lt;dsAuth</span><span class="w"> </span><span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span><span class="w"> </span><span class="na">xmlns=</span><span class="s">&quot;http://tempuri.org/Auth.xsd&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;auth&gt;</span>
+<span class="w">        </span><span class="nt">&lt;user/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;id_sa/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;id_sito&gt;</span>ID<span class="w"> </span>SITO<span class="w"> </span>ASSEGNATO<span class="nt">&lt;/id_sito&gt;</span>
+<span class="w">        </span><span class="nt">&lt;esito_auth_sa/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;id_sessione_sa/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;id_sessione_aspnet_sa/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;url_validate&gt;</span>https://example.cohesion.it/cohesionAuthCallback<span class="nt">&lt;/url_validate&gt;</span>
+<span class="w">        </span><span class="nt">&lt;url_richiesta&gt;</span>https://example.cohesion.it:443/cohesionErrorCallback<span class="nt">&lt;/url_richiesta&gt;</span>
+<span class="w">        </span><span class="nt">&lt;esito_auth_sso/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;id_sessione_sso/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;id_sessione_aspnet_sso/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;stilesheet&gt;</span>AuthRestriction=1,2,3<span class="nt">&lt;/stilesheet&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/auth&gt;</span>
+<span class="nt">&lt;/dsAuth&gt;</span>
+</code></pre></div>
+
+<p>In particolare:</p>
+<ul>
+<li><strong>id_sito</strong>: è l'identificativo assegnato all'integrazione specifica con Cohesion. Ogni sito ha un id_sito differente e univoco</li>
+<li><strong>url_validate</strong>: contiente l'URL al quale Cohesion reindirizza i dati ottenuti dall'Identity Provider utilizzato (Poste, Namirial, Cohesion, ecc...) dopo la login</li>
+<li><strong>url_richieste</strong>: contiene l'URL della pagina a cui tornare in caso di errori di autenticazione</li>
+<li><strong>stilesheet</strong>: contiente (opzionalmente) l'URL al quale Cohesion fa il <strong>redirect</strong> dopo aver eseguito la cancellazione della sessione in seguito ad una richiesta di logout. Contiene anche eventuali restrizioni sul livello di autenticazione richiesto (SPID livello 1, 2 o 3). Per specificare il livello di autenticazione è sufficiente inserire il parametro <code>&lt;AuthRestriction=1,2,3&gt;</code> indicando il numero del livello minimo accettabile (per accettare ogni tipo di autenticazione, impostare il parametro con 0,1,2,3)</li>
+</ul>
+<p>Esempio:</p>
+<div class="codehilite"><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; ?&gt;</span>
+<span class="nt">&lt;dsAuth</span><span class="w"> </span><span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span><span class="w"> </span><span class="na">xmlns=</span><span class="s">&quot;http://tempuri.org/Auth.xsd&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;auth&gt;</span>
+<span class="w">        </span><span class="nt">&lt;user/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;id_sa/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;id_sito&gt;</span>COHESION_EXAMPLE<span class="nt">&lt;/id_sito&gt;</span>
+<span class="w">        </span><span class="nt">&lt;esito_auth_sa/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;id_sessione_sa/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;id_sessione_aspnet_sa/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;url_validate&gt;</span>https://example.cohesion.it/Login<span class="nt">&lt;/url_validate&gt;</span>
+<span class="w">        </span><span class="nt">&lt;url_richiesta&gt;</span>https://example.cohesion.it<span class="nt">&lt;/url_richiesta&gt;</span>
+<span class="w">        </span><span class="nt">&lt;esito_auth_sso/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;id_sessione_sso/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;id_sessione_aspnet_sso/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;stilesheet&gt;</span>AuthRestriction=2,3;https://example.cohesion.it/LogOff<span class="nt">&lt;/stilesheet&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/auth&gt;</span>
+<span class="nt">&lt;/dsAuth&gt;</span>
+</code></pre></div>
+
+<p>In questo esempio, diciamo a Cohesion che:</p>
+<ul>
+<li>vogliamo che il token di autenticazione venga inoltrato in POST (per default) all'indirizzo https://example.cohesion.it/Login</li>
+<li>vogliamo che, una volta fatto il logout, Cohesion reindirizzi all'URL https://example.cohesion.it/LogOff</li>
+<li>il livello di autenticazione minimo accettabile è il 2 (Codice fiscale + password + PIN se l'IdP è Cohesion oppure SPID livello 2 negli altri casi).</li>
+<li>se ci sono errori, vogliamo che Cohesion torni alla homepage https://example.cohesion.it</li>
+</ul>
+<p>L'XML contenuto nel parametro auth deve essere codificato in <strong>base64</strong> e poi con <strong>URL Encode</strong>. Un esempio di prodotto finale ha questa forma:</p>
+<div class="codehilite"><pre><span></span><code>PD94bWwgdmVyc2lvbj0iMS4wIiA%2FPg0KPGRzQXV0aCB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIi
+B4bWxucz0iaHR0cDovL3RlbXB1cmkub3JnL0F1dGgueHNkIj4NCgk8YXV0aD4NCgkJPHVzZXIvPg0KCQk8aWRfc2EvPg0KCQk8aWRfc2l0bz5leGFtcGxl
+PC9pZF9zaXRvPg0KCQk8ZXNpdG9fYXV0aF9zYS8+DQoJCTxpZF9zZXNzaW9uZV9zYS8+DQoJCTxpZF9zZXNzaW9uZV9hc3BuZXRfc2EvPg0KCQk8dXJsX3Z
+hbGlkYXRlPmh0dHBzOi8vZXhhbXBsZS5jb2hlc2lvbi5pdC9Mb2dpbjwvdXJsX3ZhbGlkYXRlPg0KCQk8dXJsX3JpY2hpZXN0YT5odHRwczovL2V4YW1wb
+GUuY29oZXNpb24uaXQ8L3VybF9yaWNoaWVzdGE+DQoJCTxlc2l0b19hdXRoX3Nzby8+DQoJCTxpZF9zZXNzaW9uZV9zc28vPg0KCQk8aWRfc2Vzc2lvbm
+VfYXNwbmV0X3Nzby8+DQoJCTxzdGlsZXNoZWV0PkF1dGhSZXN0cmljdGlvbj0yLDM7aHR0cHM6Ly9leGFtcGxlLmNvaGVzaW9uLml0L0xvZ09mZjwvc3Rpb
+GVzaGVldD4NCgk8L2F1dGg+DQo8L2RzQXV0aD4
+</code></pre></div>
+
+<h2 id="cosa-contiene-il-token-cohesion-dopo-lautenticazione"><strong>Cosa contiene il token Cohesion dopo l'autenticazione?</strong><a class="headerlink" href="#cosa-contiene-il-token-cohesion-dopo-lautenticazione" title="Permanent link">&para;</a></h2>
+<p>Dopo l'autenticazione dell'utente, Cohesion effettua una chiamata <strong>POST</strong> all'indirizzo specificato in <strong>url_validate</strong> nel cui body verrà specificato un token di autenticazione. 
+Nel body ci sarà un elemento <em>auth</em> codificato in base64 e URL Encoded che conterrà un XML di questo tipo:</p>
+<div class="codehilite"><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; ?&gt;</span>
+<span class="nt">&lt;dsAuth</span><span class="w"> </span><span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span><span class="w"> </span><span class="na">xmlns=</span><span class="s">&quot;http://tempuri.org/Auth.xsd&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;auth&gt;</span>
+<span class="w">        </span><span class="nt">&lt;user&gt;</span>RSSMRA85D18F051Y<span class="nt">&lt;/user&gt;</span>
+<span class="w">        </span><span class="nt">&lt;id_sa/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;id_sito&gt;</span>example<span class="nt">&lt;/id_sito&gt;</span>
+<span class="w">        </span><span class="nt">&lt;esito_auth_sa/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;id_sessione_sa/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;id_sessione_aspnet_sa/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;url_validate&gt;</span>https://example.cohesion.it/Login<span class="nt">&lt;/url_validate&gt;</span>
+<span class="w">        </span><span class="nt">&lt;url_richiesta&gt;</span>https://example.cohesion.it<span class="nt">&lt;/url_richiesta&gt;</span>
+<span class="w">        </span><span class="nt">&lt;esito_auth_sso&gt;</span>OK<span class="nt">&lt;/esito_auth_sso&gt;</span>
+<span class="w">        </span><span class="nt">&lt;id_sessione_sso&gt;</span>A5D64899EBCEE1FA6B3E8FB3D3D358D7E5843EA25EDFD62277CACE8A5EF23B1C5E6FAB916F333B0AFB0FAE6C4CDF7B8E8DEE461E8661DB04F5FFB01BC0EF9FCB90EEA2ACA7988119EFE17D5C3BB58BC890D75D724D434D7D60C2F451F6A51D1DFFA900EF0AAA631A51458860C6CEC7B1EBC525561624208066DF276314F41F6EC258CA3F<span class="nt">&lt;/id_sessione_sso&gt;</span>
+<span class="w">        </span><span class="nt">&lt;id_sessione_aspnet_sso&gt;</span>ufrq00x4f0cq2yog2ozv4lxx;https://idp.namirialtsp.com/idp;https://example.cohesion.it/LogOff;AAdzZWNyZXQxGLSQhZFb4TSPKKPNCGfO5MaCcJ99DiuEnIzpO4YvtOrgf+6qvwyEVOguFDCVbyPcZ2hhjbBtPtuCWUGs+FYX9zREfvZ1heshK7yzE24MU7JsIBK17atMdbL31QbDPNKbH2wiswXhL2CJGjY=;AAdzZWNyZXQxGLSQhZFb4TSPKKPNCGfO5MaCcJ99DiuEnIzpO4YvtOrgf+6qvwyEVOguFDCVbyPcZ2hhjbBtPtuCWUGs+FYX9zREfvZ1heshK7yzE24MU7JsIBK17atMdbL31QbDPNKbH2wiswXhL2CJGjY=;<span class="nt">&lt;/id_sessione_aspnet_sso&gt;</span>
+<span class="w">        </span><span class="nt">&lt;stilesheet&gt;</span>AuthRestriction=1,2,3;https://example.cohesion.it/LogOff<span class="nt">&lt;/stilesheet&gt;</span>
+<span class="w">        </span><span class="nt">&lt;ip</span><span class="w"> </span><span class="na">xmlns=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>cohesion2.regione.marche.it<span class="nt">&lt;/ip&gt;</span>
+<span class="w">        </span><span class="nt">&lt;AuthRestriction</span><span class="w"> </span><span class="na">xmlns=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>1,2,3<span class="nt">&lt;/AuthRestriction&gt;</span>
+<span class="w">        </span><span class="nt">&lt;UType</span><span class="w"> </span><span class="na">xmlns=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>CD<span class="nt">&lt;/UType&gt;</span>
+<span class="w">        </span><span class="nt">&lt;purpose</span><span class="w"> </span><span class="na">xmlns=</span><span class="s">&quot;&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;url_logout</span><span class="w"> </span><span class="na">xmlns=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>https://example.cohesion.it/LogOff<span class="nt">&lt;/url_logout&gt;</span>
+<span class="w">        </span><span class="nt">&lt;cittad</span><span class="w"> </span><span class="na">xmlns=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>1<span class="nt">&lt;/cittad&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/auth&gt;</span>
+<span class="nt">&lt;/dsAuth&gt;</span>
+</code></pre></div>
+
+<p>Queste informazioni contengono solamente il codice fiscale dell'utente, ma non i suoi attributi.
+Per ottenere gli attributi completi, è necessario effettuare una chiamata GET o POST all'indirizzo <a href="https://colab.research.google.com/corgiredirector?site=https%3A%2F%2Fcohesion2.regione.marche.it%2FSPManager%2FwebCheckSessionSSO.aspx">https://cohesion2.regione.marche.it/SPManager/webCheckSessionSSO.aspx</a> con i seguenti parametri:</p>
+<div class="codehilite"><pre><span></span><code>Operation=GetCredential<span class="err">&amp;</span>IdSessioneSSO={id_sessione_sso}<span class="err">&amp;</span>IdSessioneASPNET={id_sessione_aspnet_sso}
+</code></pre></div>
+
+<p>Il token <em>SAML</em> restituito da Cohesion avrà la forma seguente:</p>
+<div class="codehilite"><pre><span></span><code><span class="nt">&lt;Signature</span><span class="w"> </span><span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/2000/09/xmldsig#&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;SignedInfo&gt;</span>
+<span class="w">        </span><span class="nt">&lt;CanonicalizationMethod</span><span class="w"> </span><span class="na">Algorithm=</span><span class="s">&quot;http://www.w3.org/TR/2001/REC-xml-c14n-20010315&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;SignatureMethod</span><span class="w"> </span><span class="na">Algorithm=</span><span class="s">&quot;http://www.w3.org/2000/09/xmldsig#rsa-sha1&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Reference</span><span class="w"> </span><span class="na">URI=</span><span class="s">&quot;#SignedXmlId&quot;</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;DigestMethod</span><span class="w"> </span><span class="na">Algorithm=</span><span class="s">&quot;http://www.w3.org/2000/09/xmldsig#sha1&quot;</span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;DigestValue&gt;</span>rNHSy/TcTBIweMerIO3jizVm7u0=<span class="nt">&lt;/DigestValue&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/Reference&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/SignedInfo&gt;</span>
+<span class="w">    </span><span class="nt">&lt;SignatureValue&gt;</span>
+<span class="w">        </span>Oz9wACp9Rxo4Z4pC8o61iXuVSJNO+UcszPNcAMNFUAY0I17IeGnB93JpwEWGbPfqn5a+i3IQdNsqlIbQtwAGovBQ6DTTb85kDo4YDue26o7a4np5DfwnO6SuhHsBHMbTvnI9A+45Q7Li4On+eELEQWFRrbS11MmwRYBxR5m5PWKupkX3O2r9JtG6tuKwi/L5+A4U/MqLKDdUm9/TX1lzn5c23XpQgiYpkGrwRqp+Q1Dsem7FcV868VYvgwYkRkj/jNgLFtcdoFij+qBRZi47EUa35KeZgP5V1ENcYigG0OXQQbdavCnPcE3EHjEL3ApkuPNVuSbJZv5TjgFdCpqjXg==
+<span class="w">    </span><span class="nt">&lt;/SignatureValue&gt;</span>
+<span class="w">    </span><span class="nt">&lt;KeyInfo&gt;</span>
+<span class="w">        </span><span class="nt">&lt;X509Data&gt;</span>
+<span class="w">            </span><span class="nt">&lt;X509Certificate&gt;</span>
+<span class="w">                </span>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
+<span class="w">            </span><span class="nt">&lt;/X509Certificate&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/X509Data&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/KeyInfo&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Object</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;SignedXmlId&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;profile</span><span class="w"> </span><span class="na">timestamp=</span><span class="s">&quot;Tue, 25 Jan 2022 22:02:49 GMT&quot;</span><span class="w"> </span><span class="na">xmlns=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;base&gt;</span>
+<span class="w">                </span><span class="nt">&lt;placeOfBirth&gt;</span>F051<span class="nt">&lt;/placeOfBirth&gt;</span>
+<span class="w">                </span><span class="nt">&lt;localita_nascita&gt;</span>ROMA<span class="nt">&lt;/localita_nascita&gt;</span>
+<span class="w">                </span><span class="nt">&lt;address&gt;</span>Via<span class="w"> </span>dei<span class="w"> </span>matti<span class="w"> </span>28<span class="w"> </span>60044<span class="w"> </span>ANCONA<span class="w"> </span>AN<span class="nt">&lt;/address&gt;</span>
+<span class="w">                </span><span class="nt">&lt;indirizzo_residenza&gt;</span>Via<span class="w"> </span>dei<span class="w"> </span>matti<span class="w"> </span>28<span class="w"> </span>60044<span class="w"> </span>ANCONA<span class="w"> </span>AN<span class="nt">&lt;/indirizzo_residenza&gt;</span>
+<span class="w">                </span><span class="nt">&lt;gender&gt;</span>M<span class="nt">&lt;/gender&gt;</span>
+<span class="w">                </span><span class="nt">&lt;sesso&gt;</span>M<span class="nt">&lt;/sesso&gt;</span>
+<span class="w">                </span><span class="nt">&lt;digitalAddress&gt;</span>xxxxxxxxxxx@pec.it<span class="nt">&lt;/digitalAddress&gt;</span>
+<span class="w">                </span><span class="nt">&lt;email_certificata&gt;</span>xxxxxxxxxxx@pec.it<span class="nt">&lt;/email_certificata&gt;</span>
+<span class="w">                </span><span class="nt">&lt;familyName&gt;</span>ROSSI<span class="nt">&lt;/familyName&gt;</span>
+<span class="w">                </span><span class="nt">&lt;cognome&gt;</span>ROSSI<span class="nt">&lt;/cognome&gt;</span>
+<span class="w">                </span><span class="nt">&lt;name&gt;</span>MARIO<span class="nt">&lt;/name&gt;</span>
+<span class="w">                </span><span class="nt">&lt;nome&gt;</span>MARIO<span class="nt">&lt;/nome&gt;</span>
+<span class="w">                </span><span class="nt">&lt;dateOfBirth&gt;</span>1985-04-18<span class="nt">&lt;/dateOfBirth&gt;</span>
+<span class="w">                </span><span class="nt">&lt;data_nascita&gt;</span>18/04/1985<span class="nt">&lt;/data_nascita&gt;</span>
+<span class="w">                </span><span class="nt">&lt;spidCode&gt;</span>NAMI0002653481<span class="nt">&lt;/spidCode&gt;</span>
+<span class="w">                </span><span class="nt">&lt;countyOfBirth&gt;</span>RM<span class="nt">&lt;/countyOfBirth&gt;</span>
+<span class="w">                </span><span class="nt">&lt;provincia_nascita&gt;</span>RM/provincia_nascita&gt;
+<span class="w">                </span><span class="nt">&lt;fiscalNumber&gt;</span>TINIT-RSSMRA85D18F051Y<span class="nt">&lt;/fiscalNumber&gt;</span>
+<span class="w">                </span><span class="nt">&lt;codice_fiscale&gt;</span>RSSMRA85D18F051Y<span class="nt">&lt;/codice_fiscale&gt;</span>
+<span class="w">                </span><span class="nt">&lt;email&gt;</span>mario.rossi@regione.marche.it<span class="nt">&lt;/email&gt;</span>
+<span class="w">                </span><span class="nt">&lt;companyFiscalNumber/&gt;</span>
+<span class="w">                </span><span class="nt">&lt;tipo_autenticazione&gt;</span>PIN<span class="nt">&lt;/tipo_autenticazione&gt;</span>
+<span class="w">                </span><span class="nt">&lt;login&gt;</span>RSSMRA85D18F051Y<span class="nt">&lt;/login&gt;</span>
+<span class="w">                </span><span class="nt">&lt;samlResponseBase64&gt;</span>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgi...<span class="nt">&lt;/samlResponseBase64&gt;</span>
+<span class="w">            </span><span class="nt">&lt;/base&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/profile&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/Object&gt;</span>
+</code></pre></div>
+
+<p>Gli attributi dell'utente sono contenuti nell'oggetto <em>Object</em>. Gli attributi restituiti possono variare in base all'Identity Provider, al livello di autenticazione e dalle impostazioni dell'utente.</p>
+<p><strong>NOTA BENE</strong>: <em>Object</em> contiene anche il token SAML in <code>samlResponseBase64</code> il cui valore è quello della <em>SAMLResponse</em> originale restituita dall'Identity Provider scelto dall'utente.</p>
+<h2 id="come-effettuare-il-logout"><strong>Come effettuare il logout?</strong><a class="headerlink" href="#come-effettuare-il-logout" title="Permanent link">&para;</a></h2>
+<p>Per effettuare il <em>logout</em> basterà semplicemente chiamare lo stesso endpoint utilizzato per ottenere gli attributi dell'utente andando a modificare il parametro <strong>Operation</strong> e specificando <em>LogoutSito</em> invece di <em>GetCredential</em></p>
+<p>Nel nostro esempio</p>
+<div class="codehilite"><pre><span></span><code>https://cohesion2.regione.marche.it/SPManager/webCheckSessionSSO.aspx?Operation=LogoutSito<span class="ni">&amp;IdSessioneSSO=A5D64899EBCEE1FA6B3E8FB3D3D358D7E5843EA25EDFD62277CACE8A5EF23B1C5E6FAB916F333B0AFB0FAE6C4CDF7B8E8DEE461E8661DB04F5FFB01BC0EF9FCB90EEA2ACA7988119EFE17D5C3BB58BC890D75D724D434D7D60C2F451F6A51D1DFFA900EF0AAA631A51458860C6CEC7B1EBC525561624208066DF276314F41F6EC258CA3F&amp;IdSessioneASPNET=ufrq00x4f0cq2yog2ozv4lxx;</span>https://idp.namirialtsp.com/idp;https://q-marche.turitweb.it/LogOff;AAdzZWNyZXQxGLSQhZFb4TSPKKPNCGfO5MaCcJ99DiuEnIzpO4YvtOrgf+6qvwyEVOguFDCVbyPcZ2hhjbBtPtuCWUGs+FYX9zREfvZ1heshK7yzE24MU7JsIBK17atMdbL31QbDPNKbH2wiswXhL2CJGjY=;AAdzZWNyZXQxGLSQhZFb4TSPKKPNCGfO5MaCcJ99DiuEnIzpO4YvtOrgf+6qvwyEVOguFDCVbyPcZ2hhjbBtPtuCWUGs+FYX9zREfvZ1heshK7yzE24MU7JsIBK17atMdbL31QbDPNKbH2wiswXhL2CJGjY=;
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Piede" >
+        
+          
+          <a href="../Pubbliche-Amministrazioni-e-Imprese/" class="md-footer__link md-footer__link--prev" aria-label="Precedente: Integrare Cohesion">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Precedente
+              </span>
+              <div class="md-ellipsis">
+                Integrare Cohesion
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../Parametri-della-Richiesta-di-Autenticazione/" class="md-footer__link md-footer__link--next" aria-label="Successivo: Parametri della richiesta di autenticazione">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Successivo
+              </span>
+              <div class="md-ellipsis">
+                Parametri della richiesta di autenticazione
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.footer"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.5cfa9459.min.js"></script>
+      
+    
+  </body>
+</html>

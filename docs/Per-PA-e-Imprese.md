@@ -1,0 +1,3 @@
+Il framework di autenticazione Cohesion ID può essere integrato esclusivamente nei siti della Pubblica Amministrazione. 
+
+Se il sito è pubblicato da o per conto della Regione Marche o dipendi da un Ente che ha sottoscritto la [convenzione](https://procedimenti.regione.marche.it/AreaPA/TipologieProcedimento/DettagliTer/13915) per l’utilizzo dell’infrastruttura di autenticazione e accesso, consulta la nostra guida [Come Integrare Cohesion](/CohesionID-Docs/Pubbliche-Amministrazioni-e-Imprese/)
