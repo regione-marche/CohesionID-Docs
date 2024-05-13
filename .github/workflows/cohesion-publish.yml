@@ -40,3 +40,9 @@ jobs:
         git add .
         git commit -m "Update wiki files"
         git push
+        
+    - name: Deploy to gh-pages branch
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./site
