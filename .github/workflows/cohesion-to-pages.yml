@@ -1,0 +1,48 @@
+name: Publish Wiki
+
+on:
+  gollum
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Clone wiki to root
+      run: |
+        git clone https://github.com/regione-marche/CohesionID-Docs.wiki.git wiki_tmp
+        rm -rf docs
+        mkdir -p ./docs
+        cp -R ./wiki_tmp/* ./docs
+        rm -rf wiki_tmp
+        
+    - name: Install MkDocs
+      run: npm install -g mkdocs
+
+    - name: Install MkDocs theme
+      run: |
+        pip install mkdocs-material
+        pip install mkdocs-gitbook
+        pip install mkdocs-material
+        pip install mkdocs-include-dir-to-nav
+        pip install mkdocs-awesome-pages-plugin
+
+    - name: Build MkDocs
+      run: mkdocs build --config-file mkdocs.yml
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git config --global user.name "GitHub Actions"
+        git add .
+        git commit -m "Update wiki files"
+        git push
+        
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.COHESIONIDSECRET }}
+        publish_dir: ./site

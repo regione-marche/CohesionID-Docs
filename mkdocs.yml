@@ -1,0 +1,66 @@
+site_name: CohesionID-Docs
+site_url: https://dariscappelletti.github.io/CohesionID-Docs/
+
+theme:
+  name: material
+  language: it
+  logo: https://raw.githubusercontent.com/DarisCappelletti/CohesionID-Docs/main/Assets/img/regione-marche-logo.png
+  favicon: https://raw.githubusercontent.com/DarisCappelletti/CohesionID-Docs/main/Assets/img/favicon.png
+  custom_dir: Custom/overrides
+  features:
+    - announce.dismiss
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - navigation.footer
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+extra:
+  generator: false
+  homepage: https://www.regione.marche.it/
+
+plugins:
+  - search
+  - awesome-pages:
+        collapse_single_pages: true
+        strict: false
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+
+nav:
+  - Home: 
+        - Cohesion id: index.md
+  - Integrare Cohesion: 
+      - Integrare Cohesion: Pubbliche-Amministrazioni-e-Imprese.md
+      - Flusso di autenticazione: Flusso-di-Autenticazione.md
+      - Parametri della richiesta di autenticazione: Parametri-della-Richiesta-di-Autenticazione.md
+      - Tipologie e livelli di accesso disponibili: Tipologie-e-livelli-di-accesso-disponibili-in-CohesionID.md
+      - Documentazione tecnica:
+        - Integrazione .NET Core 8: https://github.com/regione-marche/Cohesion2NETCore8Library
+        - Integrazione C#: Integrazione-Classe-C-Sharp.md
+        - Integrazione C# Core: Integrazione-C-Sharp-Core.md
+        - Integrazione Java: Integrazione-Servlet-Java.md
+        - Integrazione PHP: https://github.com/regione-marche/Cohesion2PHPLibrary
+        - Integrazione Phyton: https://github.com/regione-marche/Cohesion2PythonIntegrationTest
+        - Rinnovo del Token: Rinnovo-del-Token.md
+        - Configuratore integrazioni: https://colab.research.google.com/gist/xavbeta/f710b69eba7843c006ff11e561e1c2c1/configurazione-integrazione-cohesion.ipynb
+  - FAQ: FAQ.md 
+
+docs_dir: docs
+site_dir: site
