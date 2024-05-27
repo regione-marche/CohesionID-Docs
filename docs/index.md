@@ -32,6 +32,3 @@ Infatti, con la realizzazione del [nodo eIDAS italiano](https://www.agid.gov.it/
 ## **Accedere con CNS**
 _La Carta Nazionale dei Servizi (CNS)_ è uno strumento di identificazione in rete che consente la fruizione dei servizi delle amministrazioni pubbliche. La CNS non contiene la foto del titolare e non richiede particolari requisiti di sicurezza per il supporto plastico. La completa corrispondenza informatica tra CNS e Carta d'Identità Elettronica (CIE) assicura l’interoperabilità tra le due carte.
 Per maggiori informazioni circa le modalità di accesso con CNS è possibile consultare il sito **[CNS: Carta Nazionale dei Servizi](https://sistemats1.sanita.finanze.it/portale/modalita-di-accesso-con-ts_cns)**
-
-
-..
