@@ -12,14 +12,6 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
-
-    - name: Clone wiki to root
-      run: |
-        git clone https://github.com/regione-marche/CohesionID-Docs.wiki.git wiki_tmp
-        rm -rf docs
-        mkdir -p ./docs
-        cp -R ./wiki_tmp/* ./docs
-        rm -rf wiki_tmp
         
     - name: Install MkDocs
       run: npm install -g mkdocs
