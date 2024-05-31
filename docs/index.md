@@ -4,8 +4,8 @@ hide:
     - footer
 ---
 
-![cohesion](https://raw.githubusercontent.com/regione-marche/CohesionID-Docs/main/Assets/img/cohesion.png#only-dark)
-![cohesion](https://raw.githubusercontent.com/regione-marche/CohesionID-Docs/main/Assets/img/cohesionblack.png#only-light)
+![cohesion](https://raw.githubusercontent.com/DarisCappelletti/CohesionID-Docs/main/Assets/img/cohesion.png#only-dark)
+![cohesion](https://raw.githubusercontent.com/DarisCappelletti/CohesionID-Docs/main/Assets/img/cohesionblack.png#only-light)
 
 # **Che cos'è?**
 CohesionID è il framework di autenticazione della Regione Marche che permette di verificare la corretta identità degli utenti (Persone fisiche munite di codice fiscale) che accedono a servizi digitali della Regione o degli Enti convenzionati. 
@@ -14,7 +14,7 @@ Cohesion gestisce il processo di autenticazione mentre demanda al sistema integr
 Cohesion supporta diversi livelli di autenticazione sicura: basso, significativo ed elevato. 
 
 ## **Con quali modalità è possibile accedere con Cohesion?**
-![Progetto senza titolo](https://raw.githubusercontent.com/regione-marche/CohesionID-Docs/main/Assets/img/banner_auth.png)
+![Progetto senza titolo](https://raw.githubusercontent.com/DarisCappelletti/CohesionID-Docs/main/Assets/img/banner_auth.png)
 
 Cohesion supporta tutti i principali sistemi di autenticazione e di identificazione digitale verso i sistemi della PA, previsti dal Codice dell’Amministrazione Digitale (decreto legislativo 7 marzo 2005, n. 82). I cittadini possono accedere tramite le loro credenziali SPID, con la loro Carta di Identità Elettronica (CIE-ID), Tramite CNS e tramite il nodo italiano eIDAS. Ulteriori informazioni circa le due modalità di accesso principali sono reperibili all’indirizzo: [Cohesion](https://www.regione.marche.it/Regione-Utile/Agenda-Digitale/Cittadinanza-digitale/Cohesion.)
 

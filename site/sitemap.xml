@@ -1,68 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://dariscappelletti.github.io/CohesionID-Docs/</loc>
-         <lastmod>2024-05-27</lastmod>
+         <loc>https://cohesion.regione.marche.it/CohesionDocs/</loc>
+         <lastmod>2024-05-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dariscappelletti.github.io/CohesionID-Docs/Documentazione-tecnica/</loc>
-         <lastmod>2024-05-27</lastmod>
+         <loc>https://cohesion.regione.marche.it/CohesionDocs/Documentazione-tecnica/</loc>
+         <lastmod>2024-05-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dariscappelletti.github.io/CohesionID-Docs/FAQ/</loc>
-         <lastmod>2024-05-27</lastmod>
+         <loc>https://cohesion.regione.marche.it/CohesionDocs/FAQ/</loc>
+         <lastmod>2024-05-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dariscappelletti.github.io/CohesionID-Docs/Flusso-di-Autenticazione/</loc>
-         <lastmod>2024-05-27</lastmod>
+         <loc>https://cohesion.regione.marche.it/CohesionDocs/Flusso-di-Autenticazione/</loc>
+         <lastmod>2024-05-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dariscappelletti.github.io/CohesionID-Docs/Integrazione-.NET-Core-8/</loc>
-         <lastmod>2024-05-27</lastmod>
+         <loc>https://cohesion.regione.marche.it/CohesionDocs/Integrazione-.NET-Core-8/</loc>
+         <lastmod>2024-05-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dariscappelletti.github.io/CohesionID-Docs/Integrazione-C-Sharp-Core/</loc>
-         <lastmod>2024-05-27</lastmod>
+         <loc>https://cohesion.regione.marche.it/CohesionDocs/Integrazione-C-Sharp-Core/</loc>
+         <lastmod>2024-05-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dariscappelletti.github.io/CohesionID-Docs/Integrazione-Classe-C-Sharp/</loc>
-         <lastmod>2024-05-27</lastmod>
+         <loc>https://cohesion.regione.marche.it/CohesionDocs/Integrazione-Classe-C-Sharp/</loc>
+         <lastmod>2024-05-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dariscappelletti.github.io/CohesionID-Docs/Integrazione-Servlet-Java/</loc>
-         <lastmod>2024-05-27</lastmod>
+         <loc>https://cohesion.regione.marche.it/CohesionDocs/Integrazione-Servlet-Java/</loc>
+         <lastmod>2024-05-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dariscappelletti.github.io/CohesionID-Docs/Parametri-della-Richiesta-di-Autenticazione/</loc>
-         <lastmod>2024-05-27</lastmod>
+         <loc>https://cohesion.regione.marche.it/CohesionDocs/Parametri-della-Richiesta-di-Autenticazione/</loc>
+         <lastmod>2024-05-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dariscappelletti.github.io/CohesionID-Docs/Per-PA-e-Imprese/</loc>
-         <lastmod>2024-05-27</lastmod>
+         <loc>https://cohesion.regione.marche.it/CohesionDocs/Per-PA-e-Imprese/</loc>
+         <lastmod>2024-05-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dariscappelletti.github.io/CohesionID-Docs/Pubbliche-Amministrazioni-e-Imprese/</loc>
-         <lastmod>2024-05-27</lastmod>
+         <loc>https://cohesion.regione.marche.it/CohesionDocs/Pubbliche-Amministrazioni-e-Imprese/</loc>
+         <lastmod>2024-05-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dariscappelletti.github.io/CohesionID-Docs/Rinnovo-del-Token/</loc>
-         <lastmod>2024-05-27</lastmod>
+         <loc>https://cohesion.regione.marche.it/CohesionDocs/Rinnovo-del-Token/</loc>
+         <lastmod>2024-05-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dariscappelletti.github.io/CohesionID-Docs/Tipologie-e-livelli-di-accesso-disponibili-in-CohesionID/</loc>
-         <lastmod>2024-05-27</lastmod>
+         <loc>https://cohesion.regione.marche.it/CohesionDocs/Tipologie-e-livelli-di-accesso-disponibili-in-CohesionID/</loc>
+         <lastmod>2024-05-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
