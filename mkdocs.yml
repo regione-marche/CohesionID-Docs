@@ -1,11 +1,11 @@
 site_name: CohesionID-Docs
-site_url: https://dariscappelletti.github.io/CohesionID-Docs/
+site_url: https://cohesion.regione.marche.it/CohesionDocs/
 
 theme:
   name: material
   language: it
-  logo: https://raw.githubusercontent.com/DarisCappelletti/CohesionID-Docs/main/Assets/img/regione-marche-logo.png
-  favicon: https://raw.githubusercontent.com/DarisCappelletti/CohesionID-Docs/main/Assets/img/favicon.png
+  logo: https://raw.githubusercontent.com/regione-marche/CohesionID-Docs/main/Assets/img/regione-marche-logo.png
+  favicon: https://raw.githubusercontent.com/regione-marche/CohesionID-Docs/main/Assets/img/favicon.png
   custom_dir: Custom/overrides
   features:
     - announce.dismiss
