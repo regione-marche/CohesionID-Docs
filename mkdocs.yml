@@ -4,8 +4,8 @@ site_url: https://cohesion.regione.marche.it/CohesionDocs/
 theme:
   name: material
   language: it
-  logo: https://raw.githubusercontent.com/regione-marche/CohesionID-Docs/main/Assets/img/regione-marche-logo.png
-  favicon: https://raw.githubusercontent.com/regione-marche/CohesionID-Docs/main/Assets/img/favicon.png
+  logo: images/regione-marche-logo.png
+  favicon: images/favicon.png
   custom_dir: Custom/overrides
   features:
     - announce.dismiss
