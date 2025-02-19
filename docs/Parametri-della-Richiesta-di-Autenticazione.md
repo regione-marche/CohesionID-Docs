@@ -19,7 +19,7 @@ https://cohesion2.regione.marche.it:443/testcohesion/privato/pagina_protetta.asp
 <id_sessione_sso />
 <id_sessione_aspnet_sso />
 <stilesheet>AuthRestriction=3,2,1,0;
-https://cohesion2.regione.marche.it/testcohesion/Index.aspx;UType=d;purpose=PG|PF|LP;aggregato=1;eidas=3;SpidMode=OIDC;CieMode=OIDC;IPA=c_000</stilesheet>
+https://cohesion2.regione.marche.it/testcohesion/Index.aspx;UType=d;purpose=PG|PF|LP;aggregato=1;eidas=3;SpidMode=OIDC;CieMode=OIDC;IPA=c_000;SSO=1</stilesheet>
 </auth>
 </dsAuth>
 
@@ -96,3 +96,8 @@ Se non specificato, verrà utilizzato il protocollo di default SAML mentre, impo
 L'IPA è l'Indice delle Pubbliche Amministrazioni, univoco ad ogni ente della Pubblica Amministrazione. 
 
 Specificando questo parametro, CohesionID effettuerà la richiesta di autenticazione verso le piattaforme nazionali ed europee per conto dell'ente aggregato specificato.
+
+## **`SSO`**
+Il parametro SSO abilita la funzionalità di Single Sign-On, che consente agli utenti di autenticarsi una sola volta ed accedere a più servizi senza dover inserire nuovamente le credenziali.
+
+Se non specificato, il valore di default è `SSO=0`. Impostando il parametro `SSO=1`, se l'utente ha già effettuato l'autenticazione di livello almeno pari o superiore a quello richiesto dal servizio di destinazione, potrà accedere senza dover ripetere il login. 
