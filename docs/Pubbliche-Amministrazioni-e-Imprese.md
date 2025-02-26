@@ -16,4 +16,4 @@ Effettuata la richiesta, i nostri tecnici processeranno i dati inseriti ed invie
 ## **Integrazione**
 
 Completata la richiesta di Integrazione e ottenuto l'ID Sito, sarà possibile procedere all'effettiva integrazione nel proprio applicativo.
-Per supporto nell'integrazione, consulta la documentazione relativa al [flusso di autenticazione](/CohesionID-Docs/Flusso-di-Autenticazione) e i [parametri della richiesta di autenticazione](/CohesionID-Docs/Parametri-della-Richiesta-di-Autenticazione). Nel caso si voglia utilizzare una delle integrazioni già disponibili, consultare la [Documentazione Tecnica](/CohesionID-Docs/Documentazione-tecnica)
+Per supporto nell'integrazione, consulta la documentazione relativa al [flusso di autenticazione](/CohesionDocs/Flusso-di-Autenticazione) e i [parametri della richiesta di autenticazione](/CohesionDocs/Parametri-della-Richiesta-di-Autenticazione). Nel caso si voglia utilizzare una delle integrazioni già disponibili, consultare la [Documentazione Tecnica](/CohesionDocs/Documentazione-tecnica)
