@@ -3,11 +3,11 @@
 Con il presente si vuole fornire una panoramica completa delle modalità di integrazione e delle configurazioni di utilizzo del Service Provider fornito con Cohesion in applicativi web che richiedono autenticazione e profilazione utente.
 Verrà in dettaglio descritta la procedura di installazione in ambiente Java Servlet e la configurazione per l’utilizzo classico ed il funzionamento in modalità federata SAML2.0.
 
-> **[Scarica la Servlet Java ed il manuale](https://cohesion.regione.marche.it/cohesioninformativo/materiale/integrazione%20mediante%20Servlet.zip)**
+> **[Scarica la Servlet Java ed il manuale](https://github.com/regione-marche/Cohesion2Servlet/blob/main/integrazione%20mediante%20Servlet.zip?raw=true)**
 
-> **[Scarica la versione per java8 e successive](https://cohesion.regione.marche.it/cohesioninformativo/Portals/0/Download/CohesionServlet-3.0.zip)**
+> **[Scarica la versione per java8 e successive](https://github.com/regione-marche/Cohesion2Servlet/blob/main/CohesionServlet-3.0.zip?raw=true)**
 
-> **[Scarica il keystore valido a partire dal 16/02/2022](https://cohesion.regione.marche.it/cohesioninformativo/Portals/0/Keystore_java.zip)**
+> **[Scarica il keystore valido a partire dal 16/02/2022](https://github.com/regione-marche/Cohesion2Servlet/blob/main/Keystore_java.zip?raw=true)**
 
 
 ***
