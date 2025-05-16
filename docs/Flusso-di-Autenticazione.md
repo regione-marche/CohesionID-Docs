@@ -184,13 +184,35 @@ Gli attributi dell'utente sono contenuti nell'oggetto *Object*. Gli attributi re
 **NOTA BENE**: *Object* contiene anche il token SAML in `samlResponseBase64` il cui valore è quello della _SAMLResponse_ originale restituita dall'Identity Provider scelto dall'utente.
 
 
-## **Come effettuare il logout?**
+## **Come effettuare il logout**
 
-Per effettuare il *logout* basterà semplicemente chiamare lo stesso endpoint utilizzato per ottenere gli attributi dell'utente andando a modificare il parametro **Operation** e specificando *LogoutSito* invece di *GetCredential*
+Per effettuare correttamente il logout, è necessario intervenire su due fronti: **sessione operativa** e **browser**.
 
-Nel nostro esempio
+### 1. Logout della sessione operativa
 
-```xml
-https://cohesion2.regione.marche.it/SPManager/webCheckSessionSSO.aspx?Operation=LogoutSito&IdSessioneSSO=A5D64899EBCEE1FA6B3E8FB3D3D358D7E5843EA25EDFD62277CACE8A5EF23B1C5E6FAB916F333B0AFB0FAE6C4CDF7B8E8DEE461E8661DB04F5FFB01BC0EF9FCB90EEA2ACA7988119EFE17D5C3BB58BC890D75D724D434D7D60C2F451F6A51D1DFFA900EF0AAA631A51458860C6CEC7B1EBC525561624208066DF276314F41F6EC258CA3F&IdSessioneASPNET=ufrq00x4f0cq2yog2ozv4lxx;https://idp.namirialtsp.com/idp;https://q-marche.turitweb.it/LogOff;AAdzZWNyZXQxGLSQhZFb4TSPKKPNCGfO5MaCcJ99DiuEnIzpO4YvtOrgf+6qvwyEVOguFDCVbyPcZ2hhjbBtPtuCWUGs+FYX9zREfvZ1heshK7yzE24MU7JsIBK17atMdbL31QbDPNKbH2wiswXhL2CJGjY=;AAdzZWNyZXQxGLSQhZFb4TSPKKPNCGfO5MaCcJ99DiuEnIzpO4YvtOrgf+6qvwyEVOguFDCVbyPcZ2hhjbBtPtuCWUGs+FYX9zREfvZ1heshK7yzE24MU7JsIBK17atMdbL31QbDPNKbH2wiswXhL2CJGjY=;
+Il logout lato sessione operativa si effettua effettuando una chiamata allo stesso endpoint utilizzato per ottenere gli attributi dell’utente, modificando il valore del parametro `Operation` da `GetCredential` a `LogoutSito`.
 
+Questa chiamata deve essere eseguita in modalità **server to server**, ovvero deve essere inviata direttamente dal backend dell’applicazione.
+
+#### Esempio di chiamata:
+
+``` http
+GET https://cohesion2.regione.marche.it/SPManager/webCheckSessionSSO.aspx
+     ?Operation=LogoutSito
+     &IdSessioneSSO=A5D64899EBCEE1FA6B3E8FB3D3D358D7E5843EA25EDFD62277CACE8A5EF23B1C5E6FAB916F333B0AFB0FAE6C4CDF7B8E8DEE461E8661DB04F5FFB01BC0EF9FCB90EEA2ACA7988119EFE17D5C3BB58BC890D75D724D434D7D60C2F451F6A51D1DFFA900EF0AAA631A51458860C6CEC7B1EBC525561624208066DF276314F41F6EC258CA3F
+     &IdSessioneASPNET=ufrq00x4f0cq2yog2ozv4lxx;
+     https://idp.namirialtsp.com/idp;
+     https://q-marche.turitweb.it/LogOff;
+     AAdzZWNyZXQxGLSQhZFb4TSPKKPNCGfO5MaCcJ99DiuEnIzpO4YvtOrgf+6qvwyEVOguFDCVbyPcZ2hhjbBtPtuCWUGs+FYX9zREfvZ1heshK7yzE24MU7JsIBK17atMdbL31QbDPNKbH2wiswXhL2CJGjY=;
+     AAdzZWNyZXQxGLSQhZFb4TSPKKPNCGfO5MaCcJ99DiuEnIzpO4YvtOrgf+6qvwyEVOguFDCVbyPcZ2hhjbBtPtuCWUGs+FYX9zREfvZ1heshK7yzE24MU7JsIBK17atMdbL31QbDPNKbH2wiswXhL2CJGjY=
+
+```
+
+### 2. Logout del browser
+
+Il logout lato browser richiede che il browser dell’utente venga **rediretto** a una specifica URL. Questa operazione consente l’eliminazione dei cookie di autenticazione salvati nel browser.
+
+La URL da utilizzare è la seguente:
+
+```https://cohesion2.regione.marche.it/SPManager/Logout.aspx
 ```
