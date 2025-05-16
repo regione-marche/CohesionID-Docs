@@ -19,7 +19,7 @@
       
       
       <link rel="icon" href="../images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
@@ -27,7 +27,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
@@ -557,9 +557,48 @@ Hai bisogno di assistenza con Cohesion? <a href="mailto:integrazioneCohesion@reg
         <li class="md-nav__item">
   <a href="#come-effettuare-il-logout" class="md-nav__link">
     <span class="md-ellipsis">
-      Come effettuare il logout?
+      Come effettuare il logout
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Come effettuare il logout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-logout-della-sessione-operativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Logout della sessione operativa
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Logout della sessione operativa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#esempio-di-chiamata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esempio di chiamata:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-logout-del-browser" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Logout del browser
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -954,9 +993,48 @@ Hai bisogno di assistenza con Cohesion? <a href="mailto:integrazioneCohesion@reg
         <li class="md-nav__item">
   <a href="#come-effettuare-il-logout" class="md-nav__link">
     <span class="md-ellipsis">
-      Come effettuare il logout?
+      Come effettuare il logout
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Come effettuare il logout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-logout-della-sessione-operativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Logout della sessione operativa
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Logout della sessione operativa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#esempio-di-chiamata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esempio di chiamata:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-logout-del-browser" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Logout del browser
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1138,11 +1216,26 @@ Per ottenere gli attributi completi, è necessario effettuare una chiamata GET o
 
 <p>Gli attributi dell'utente sono contenuti nell'oggetto <em>Object</em>. Gli attributi restituiti possono variare in base all'Identity Provider, al livello di autenticazione e dalle impostazioni dell'utente.</p>
 <p><strong>NOTA BENE</strong>: <em>Object</em> contiene anche il token SAML in <code>samlResponseBase64</code> il cui valore è quello della <em>SAMLResponse</em> originale restituita dall'Identity Provider scelto dall'utente.</p>
-<h2 id="come-effettuare-il-logout"><strong>Come effettuare il logout?</strong><a class="headerlink" href="#come-effettuare-il-logout" title="Permanent link">&para;</a></h2>
-<p>Per effettuare il <em>logout</em> basterà semplicemente chiamare lo stesso endpoint utilizzato per ottenere gli attributi dell'utente andando a modificare il parametro <strong>Operation</strong> e specificando <em>LogoutSito</em> invece di <em>GetCredential</em></p>
-<p>Nel nostro esempio</p>
-<div class="codehilite"><pre><span></span><code>https://cohesion2.regione.marche.it/SPManager/webCheckSessionSSO.aspx?Operation=LogoutSito<span class="ni">&amp;IdSessioneSSO=A5D64899EBCEE1FA6B3E8FB3D3D358D7E5843EA25EDFD62277CACE8A5EF23B1C5E6FAB916F333B0AFB0FAE6C4CDF7B8E8DEE461E8661DB04F5FFB01BC0EF9FCB90EEA2ACA7988119EFE17D5C3BB58BC890D75D724D434D7D60C2F451F6A51D1DFFA900EF0AAA631A51458860C6CEC7B1EBC525561624208066DF276314F41F6EC258CA3F&amp;IdSessioneASPNET=ufrq00x4f0cq2yog2ozv4lxx;</span>https://idp.namirialtsp.com/idp;https://q-marche.turitweb.it/LogOff;AAdzZWNyZXQxGLSQhZFb4TSPKKPNCGfO5MaCcJ99DiuEnIzpO4YvtOrgf+6qvwyEVOguFDCVbyPcZ2hhjbBtPtuCWUGs+FYX9zREfvZ1heshK7yzE24MU7JsIBK17atMdbL31QbDPNKbH2wiswXhL2CJGjY=;AAdzZWNyZXQxGLSQhZFb4TSPKKPNCGfO5MaCcJ99DiuEnIzpO4YvtOrgf+6qvwyEVOguFDCVbyPcZ2hhjbBtPtuCWUGs+FYX9zREfvZ1heshK7yzE24MU7JsIBK17atMdbL31QbDPNKbH2wiswXhL2CJGjY=;
+<h2 id="come-effettuare-il-logout"><strong>Come effettuare il logout</strong><a class="headerlink" href="#come-effettuare-il-logout" title="Permanent link">&para;</a></h2>
+<p>Per effettuare correttamente il logout, è necessario intervenire su due fronti: <strong>sessione operativa</strong> e <strong>browser</strong>.</p>
+<h3 id="1-logout-della-sessione-operativa">1. Logout della sessione operativa<a class="headerlink" href="#1-logout-della-sessione-operativa" title="Permanent link">&para;</a></h3>
+<p>Il logout lato sessione operativa si effettua effettuando una chiamata allo stesso endpoint utilizzato per ottenere gli attributi dell’utente, modificando il valore del parametro <code>Operation</code> da <code>GetCredential</code> a <code>LogoutSito</code>.</p>
+<p>Questa chiamata deve essere eseguita in modalità <strong>server to server</strong>, ovvero deve essere inviata direttamente dal backend dell’applicazione.</p>
+<h4 id="esempio-di-chiamata">Esempio di chiamata:<a class="headerlink" href="#esempio-di-chiamata" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span><code><span class="err">GET https://cohesion2.regione.marche.it/SPManager/webCheckSessionSSO.aspx</span>
+<span class="err">     ?Operation=LogoutSito</span>
+<span class="err">     &amp;IdSessioneSSO=A5D64899EBCEE1FA6B3E8FB3D3D358D7E5843EA25EDFD62277CACE8A5EF23B1C5E6FAB916F333B0AFB0FAE6C4CDF7B8E8DEE461E8661DB04F5FFB01BC0EF9FCB90EEA2ACA7988119EFE17D5C3BB58BC890D75D724D434D7D60C2F451F6A51D1DFFA900EF0AAA631A51458860C6CEC7B1EBC525561624208066DF276314F41F6EC258CA3F</span>
+<span class="err">     &amp;IdSessioneASPNET=ufrq00x4f0cq2yog2ozv4lxx;</span>
+<span class="err">     https://idp.namirialtsp.com/idp;</span>
+<span class="err">     https://q-marche.turitweb.it/LogOff;</span>
+<span class="err">     AAdzZWNyZXQxGLSQhZFb4TSPKKPNCGfO5MaCcJ99DiuEnIzpO4YvtOrgf+6qvwyEVOguFDCVbyPcZ2hhjbBtPtuCWUGs+FYX9zREfvZ1heshK7yzE24MU7JsIBK17atMdbL31QbDPNKbH2wiswXhL2CJGjY=;</span>
+<span class="err">     AAdzZWNyZXQxGLSQhZFb4TSPKKPNCGfO5MaCcJ99DiuEnIzpO4YvtOrgf+6qvwyEVOguFDCVbyPcZ2hhjbBtPtuCWUGs+FYX9zREfvZ1heshK7yzE24MU7JsIBK17atMdbL31QbDPNKbH2wiswXhL2CJGjY=</span>
 </code></pre></div>
+
+<h3 id="2-logout-del-browser">2. Logout del browser<a class="headerlink" href="#2-logout-del-browser" title="Permanent link">&para;</a></h3>
+<p>Il logout lato browser richiede che il browser dell’utente venga <strong>rediretto</strong> a una specifica URL. Questa operazione consente l’eliminazione dei cookie di autenticazione salvati nel browser.</p>
+<p>La URL da utilizzare è la seguente:</p>
+<p><code>https://cohesion2.regione.marche.it/SPManager/Logout.aspx</code></p>
 
 
 
@@ -1228,10 +1321,10 @@ Per ottenere gli attributi completi, è necessario effettuare una chiamata GET o
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.footer"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.footer"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   </body>
