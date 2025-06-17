@@ -51,6 +51,7 @@ nav:
       - Flusso di autenticazione: Flusso-di-Autenticazione.md
       - Parametri della richiesta di autenticazione: Parametri-della-Richiesta-di-Autenticazione.md
       - Tipologie e livelli di accesso disponibili: Tipologie-e-livelli-di-accesso-disponibili-in-CohesionID.md
+      - Ambiente di collaudo: Ambiente di collaudo.md
       - Documentazione tecnica:
         - Integrazione .NET Core 8: https://github.com/regione-marche/Cohesion2NETCore8Library
         - Integrazione C#: Integrazione-Classe-C-Sharp.md
