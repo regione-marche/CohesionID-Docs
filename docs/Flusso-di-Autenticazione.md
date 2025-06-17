@@ -16,7 +16,7 @@ L'utente viene reindirizzato all'applicazione con un _token proprietario_, conte
 
 ## **Auth Request**
 
-Per accedere ai servizi offerti da CohesionID, è necessario effettuare una chiamata in GET all'indirizzo [https://cohesion2.regione.marche.it/SPManager/WAYF.aspx](https://colab.research.google.com/corgiredirector?site=https%3A%2F%2Fcohesion2.regione.marche.it%2FSPManager%2FWAYF.aspx) con un parametro _AUTH_ contenente dei parametri di autenticazione come quelli dell'esempio in basso.
+Per accedere ai servizi offerti da CohesionID, è necessario effettuare una chiamata in GET all'indirizzo [https://cohesion2.regione.marche.it/SPManager/WAYF.aspx](https://colab.research.google.com/corgiredirector?site=https%3A%2F%2Fcohesion2.regione.marche.it%2FSPManager%2FWAYF.aspx) con un parametro `AUTH` contenente dei parametri di autenticazione come quelli dell'esempio in basso.
 
 Il chiamante, in questo esempio, sarà *example.cohesion.it*:
 
