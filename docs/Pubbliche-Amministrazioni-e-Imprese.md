@@ -7,7 +7,7 @@ Nel caso in cui il sistema informativo in questione sia pubblicato da o per cont
 Ricordiamo che Cohesion è integrabile esclusivamente nei siti della pubblica amministrazione. 
 
 Nel caso in cui l’Ente responsabile non sia Regione Marche è necessario assicurarsi che questi abbia sottoscritto la convenzione per l’utilizzo dell’infrastruttura di autenticazione e accesso della Regione Marche quale Soggetto Aggregatore SPID:
-https://procedimenti.regione.marche.it/AreaPA/TipologieProcedimento/DettagliTer/13915
+[https://procedimenti.regione.marche.it/AreaPA/TipologieProcedimento/DettagliTer/13915](https://procedimenti.regione.marche.it/AreaPA/TipologieProcedimento/DettagliTer/13915)
 
 ## **ID Sito**
 
