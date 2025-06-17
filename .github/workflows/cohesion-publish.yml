@@ -12,17 +12,15 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
-        
-    - name: Install MkDocs
-      run: npm install -g mkdocs
 
-    - name: Install MkDocs theme
+    - name: Install MkDocs
       run: |
+        pip install mkdocs
         pip install mkdocs-material
         pip install mkdocs-gitbook
-        pip install mkdocs-material
         pip install mkdocs-include-dir-to-nav
         pip install mkdocs-awesome-pages-plugin
+        pip install mkdocs-static-files-versioning
 
     - name: Build MkDocs
       run: mkdocs build --config-file mkdocs.yml
@@ -32,9 +30,9 @@ jobs:
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git config --global user.name "GitHub Actions"
         git add .
-        git commit -m "Update wiki files"
-        git push
-        
+        git commit -m "Update wiki files" || echo "No changes to commit"
+        git push || echo "No changes to push"
+
     - name: Deploy to gh-pages branch
       uses: peaceiris/actions-gh-pages@v3
       with:
