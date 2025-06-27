@@ -120,7 +120,7 @@ Nel body ci sarà un elemento *auth* codificato in base64 e URL Encoded che cont
 ```
 Queste informazioni contengono solamente il codice fiscale dell'utente, ma non i suoi attributi.
 
-!!! danger "Obbligo di verifica del livello di accesso"
+!!! danger "ATTENZIONE"
 
     **L'applicazione integrante è tenuta a verificare il livello di accesso indicato nel token ricevuto al termine della procedura di login, al fine di garantire che sia conforme a quanto previsto dal livello di autenticazione configurato.**
 
