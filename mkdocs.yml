@@ -26,7 +26,9 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-
+  icon:
+    admonition:
+      danger: material/alert
 extra:
   generator: false
   homepage: https://www.regione.marche.it/
