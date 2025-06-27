@@ -119,6 +119,11 @@ Nel body ci sarà un elemento *auth* codificato in base64 e URL Encoded che cont
 </dsAuth>
 ```
 Queste informazioni contengono solamente il codice fiscale dell'utente, ma non i suoi attributi.
+
+!!! danger "Obbligo di verifica del livello di accesso"
+
+    **L'applicazione integrante è tenuta a verificare il livello di accesso indicato nel token ricevuto al termine della procedura di login, al fine di garantire che sia conforme a quanto previsto dal livello di autenticazione configurato.**
+
 Per ottenere gli attributi completi, è necessario effettuare una chiamata GET o POST all'indirizzo [https://cohesion2.regione.marche.it/SPManager/webCheckSessionSSO.aspx](https://colab.research.google.com/corgiredirector?site=https%3A%2F%2Fcohesion2.regione.marche.it%2FSPManager%2FwebCheckSessionSSO.aspx) con i seguenti parametri:
 
 ```html
