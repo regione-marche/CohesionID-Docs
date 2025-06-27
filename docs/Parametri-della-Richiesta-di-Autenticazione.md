@@ -39,7 +39,7 @@ Il parametro `AuthRestriction` stabilisce il livello di autenticazione minimo ri
 Ad esempio, impostando il parametro come
 `AuthRestriction=3,2,1` stabiliamo che l'accesso sarà consentito ad utenze che dispongono di credenziali SPID di Livello 2 e 3, nonché tramite Dominio, ma non sarà possibile utilizzare credenziali SPID di primo livello.
 
-!!! danger " Obbligo di verifica del livello di accesso"
+!!! danger " ATTENZIONE"
 
     **L'applicazione integrante è tenuta a verificare il livello di accesso indicato nel token ricevuto al termine della procedura di login, al fine di garantire che sia conforme a quanto previsto dal livello di autenticazione configurato.**
 
