@@ -41,7 +41,7 @@ Ad esempio, impostando il parametro come
 
 !!! danger " Obbligo di verifica del livello di accesso"
 
-    **È responsabilità dell'applicazione integrante validare il livello di accesso contenuto nel token ricevuto al termine della procedura di login, verificando che sia coerente con il livello di autenticazione configurato.**
+    **L'applicazione integrante è tenuta a verificare il livello di accesso indicato nel token ricevuto al termine della procedura di login, al fine di garantire che sia conforme a quanto previsto dal livello di autenticazione configurato.**
 
 ## **URL di reindirizzamento**
 L'URL al quale l'utente sarà reindirizzato dopo aver effettuato l'autenticazione.
