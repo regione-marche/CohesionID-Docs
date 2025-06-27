@@ -1188,8 +1188,12 @@ Nel body ci sarà un elemento <em>auth</em> codificato in base64 e URL Encoded c
 <span class="nt">&lt;/dsAuth&gt;</span>
 </code></pre></div>
 
-<p>Queste informazioni contengono solamente il codice fiscale dell'utente, ma non i suoi attributi.
-Per ottenere gli attributi completi, è necessario effettuare una chiamata GET o POST all'indirizzo <a href="https://colab.research.google.com/corgiredirector?site=https%3A%2F%2Fcohesion2.regione.marche.it%2FSPManager%2FwebCheckSessionSSO.aspx">https://cohesion2.regione.marche.it/SPManager/webCheckSessionSSO.aspx</a> con i seguenti parametri:</p>
+<p>Queste informazioni contengono solamente il codice fiscale dell'utente, ma non i suoi attributi.</p>
+<div class="admonition danger">
+<p class="admonition-title">Obbligo di verifica del livello di accesso</p>
+<p><strong>L'applicazione integrante è tenuta a verificare il livello di accesso indicato nel token ricevuto al termine della procedura di login, al fine di garantire che sia conforme a quanto previsto dal livello di autenticazione configurato.</strong></p>
+</div>
+<p>Per ottenere gli attributi completi, è necessario effettuare una chiamata GET o POST all'indirizzo <a href="https://colab.research.google.com/corgiredirector?site=https%3A%2F%2Fcohesion2.regione.marche.it%2FSPManager%2FwebCheckSessionSSO.aspx">https://cohesion2.regione.marche.it/SPManager/webCheckSessionSSO.aspx</a> con i seguenti parametri:</p>
 <div class="codehilite"><pre><span></span><code>Operation=GetCredential<span class="err">&amp;</span>IdSessioneSSO={id_sessione_sso}<span class="err">&amp;</span>IdSessioneASPNET={id_sessione_aspnet_sso}
 </code></pre></div>
 
