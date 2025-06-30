@@ -501,6 +501,54 @@ Hai bisogno di assistenza con Cohesion? <a href="mailto:integrazioneCohesion@reg
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Richiesta di Integrazione">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#livello-di-autenticazione-minimo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Livello di autenticazione minimo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Livello di autenticazione minimo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#esempio-concreto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esempio concreto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nota" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nota
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#convenzione-per-lutilizzo-di-cohesion-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      Convenzione per l'utilizzo di Cohesion Id
+    </span>
+  </a>
+  
 </li>
       
         <li class="md-nav__item">
@@ -917,6 +965,54 @@ Hai bisogno di assistenza con Cohesion? <a href="mailto:integrazioneCohesion@reg
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Richiesta di Integrazione">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#livello-di-autenticazione-minimo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Livello di autenticazione minimo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Livello di autenticazione minimo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#esempio-concreto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esempio concreto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nota" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nota
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#convenzione-per-lutilizzo-di-cohesion-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      Convenzione per l'utilizzo di Cohesion Id
+    </span>
+  </a>
+  
 </li>
       
         <li class="md-nav__item">
@@ -958,6 +1054,19 @@ Hai bisogno di assistenza con Cohesion? <a href="mailto:integrazioneCohesion@reg
 <p>Il primo step del processo di <em>Integrazione</em> del Sistema Cohesion nel proprio applicativo è la <strong>Richiesta di Integrazione</strong>.</p>
 <p>Nel caso in cui il sistema informativo in questione sia pubblicato da o per conto di Regione Marche è possibile compilare direttamente la <strong>Richiesta di Integrazione</strong> al link: <a href="https://procedimenti.regione.marche.it/Pratiche/Avvia/3049">Richiesta di Integrazione</a>. 
 Ricordiamo che Cohesion è integrabile esclusivamente nei siti della pubblica amministrazione. </p>
+<h3 id="livello-di-autenticazione-minimo"><strong>Livello di autenticazione minimo</strong><a class="headerlink" href="#livello-di-autenticazione-minimo" title="Permanent link">&para;</a></h3>
+<p>All'interno del modulo di richiesta è necesario specificare il <strong>livello di accesso minimo necessario</strong> per il servizio.
+Nel caso in cui il sistema di autenticazione riceva una richiesta di autenticazione per il servizio associata a un livello di autenticazione <strong>inferiore</strong> a quello minimo indicato, <strong>Cohesion ignorerà</strong> il livello di accesso indicato ed esporrà il livello minimo.</p>
+<h4 id="esempio-concreto">Esempio concreto<a class="headerlink" href="#esempio-concreto" title="Permanent link">&para;</a></h4>
+<p><strong>Ipotesi:</strong> nella richiesta di federazione per il sistema <code>serviziopubblico.it</code> è stato specificato un livello di accesso minimo "<strong>Significativo</strong>".</p>
+<p>Una volta che il servizio è stato federato, <strong>Cohesion riceve una richiesta di autenticazione con livello "</strong>Basso<strong>"</strong> (quindi inferiore a "Significativo").<br />
+In questo caso, <strong>Cohesion esporrà all’utente una maschera di accesso con livello "Significativo"</strong>, ignorando la richiesta specifica.</p>
+<hr />
+<h4 id="nota">Nota<a class="headerlink" href="#nota" title="Permanent link">&para;</a></h4>
+<p>Per ogni servizio per cui si richiede un livello minimo "<strong>Basso</strong>", è necessario <strong>specificare la motivazione</strong> di tale scelta nel campo di testo sottostante.</p>
+<p>Per identificare il livello di autenticazione minimo adeguato si può fare riferimento a quanto indicato nella documentazione tecnica del servizio:<br />
+🔗 <a href="https://cohesion.regione.marche.it/CohesionDocs/Linee-guida-Livello-di-autenticazione">cohesion.regione.marche.it/CohesionDocs/Linee-guida-Livello-di-autenticazione</a></p>
+<h2 id="convenzione-per-lutilizzo-di-cohesion-id"><strong>Convenzione per l'utilizzo di Cohesion Id</strong><a class="headerlink" href="#convenzione-per-lutilizzo-di-cohesion-id" title="Permanent link">&para;</a></h2>
 <p>Nel caso in cui l’Ente responsabile non sia Regione Marche è necessario assicurarsi che questi abbia sottoscritto la convenzione per l’utilizzo dell’infrastruttura di autenticazione e accesso della Regione Marche quale Soggetto Aggregatore SPID:
 <a href="https://procedimenti.regione.marche.it/AreaPA/TipologieProcedimento/DettagliTer/13915">https://procedimenti.regione.marche.it/AreaPA/TipologieProcedimento/DettagliTer/13915</a></p>
 <h2 id="id-sito"><strong>ID Sito</strong><a class="headerlink" href="#id-sito" title="Permanent link">&para;</a></h2>
