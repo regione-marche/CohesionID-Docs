@@ -97,6 +97,13 @@ Per garantire la continuità del servizio:
 
 In questo modo si garantisce il rispetto dei requisiti normativi senza compromettere l’accessibilità al servizio da parte degli utenti autorizzati.
 
+### ❓ Domanda:
+C’è un livello minimo di autenticazione?
+
+### ✅ Risposta:
+**Sì**, secondo le normative in vigore, il livello minimo di autenticazione richiesto è **"significativo" (livello 2)**.
+
+Tuttavia, se il servizio non richiede una protezione elevata e soddisfa determinati requisiti (ad esempio, non trattando dati sensibili o riservati), può essere richiesto un livello di autenticazione **inferiore**. In tal caso, è necessario giustificare questa scelta in fase di integrazione o, successivamente, attraverso una richiesta formale di modifica del livello di autenticazione.
 
 ### ❓ Domanda:
 Un sito che gestisco è già integrato in Cohesion, che di default applica il livello "significativo" di autenticazione. Tuttavia, il mio sito ha caratteristiche che giustificherebbero un accesso con livello "basso". A chi posso comunicarlo?
@@ -115,5 +122,6 @@ La **comunicazione del livello minimo di autenticazione** avviene in due modalit
   🔗 [Modulo richiesta modifica livello di accesso](https://procedimenti.regione.marche.it/Pratiche/Avvia/14234)
 
 La richiesta sarà valutata dal team tecnico e, se conforme ai criteri di sicurezza e proporzionalità previsti dalla normativa vigente, il livello potrà essere aggiornato di conseguenza nel sistema Cohesion.
+
 
 
