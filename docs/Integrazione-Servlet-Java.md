@@ -92,7 +92,7 @@ Per abilitare il funzionamento in modalità SAML2.0 è sufficiente cambiare i va
 
 Deve contenere obbligatoriamente il percorso completo della propria pagina di logout affinché il logout SAML funzioni correttamente. Può contenere altri due parametri opzionali: i livelli di autenticazione da mostrare (parametro AuthRestriction) e un flag per mostrare solo i meccanismi di accesso federato SPID, CIEID, CNS e l'accesso tramite dominio. I vari parametri vanno separati da punto e virgola ";".
 
-Per approfondimenti in merito alla configurazione dei parametri addizionali, è possibile far riferimento alla pagina [Parametri della Richiesta di Autenticazione](https://cohesion.regione.marche.it/CohesionDocs/Flusso-di-Autenticazione/). 
+Per approfondimenti in merito alla configurazione dei parametri addizionali, è possibile far riferimento alla pagina [Parametri della Richiesta di Autenticazione](https://cohesion.regione.marche.it/CohesionDocs/Parametri-della-Richiesta-di-Autenticazione/). 
 
 
 > Opzionale
