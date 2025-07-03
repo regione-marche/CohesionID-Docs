@@ -64,6 +64,7 @@ nav:
         - Integrazione Phyton: https://github.com/regione-marche/Cohesion2PythonIntegrationTest
         - Rinnovo del Token: Rinnovo-del-Token.md
         - Configuratore integrazioni: https://colab.research.google.com/gist/xavbeta/f710b69eba7843c006ff11e561e1c2c1/configurazione-integrazione-cohesion.ipynb
+  - Richiesta credenziali Cohesion id: Richiesta-Credenziali-Cohesion.md
   - FAQ: FAQ.md 
 
 docs_dir: docs
