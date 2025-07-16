@@ -42,6 +42,8 @@ Per modificare la propria password, accedere al menu **My Cohesion** presente in
 
 Per procedere sarà necessario effettuare l’autenticazione.
 
+---
+
 ### Reset del PIN
 
 In caso di **PIN dimenticato**, è possibile richiederne il reset:
