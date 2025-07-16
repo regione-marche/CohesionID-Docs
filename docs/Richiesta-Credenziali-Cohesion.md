@@ -44,12 +44,12 @@ Per procedere sarà necessario effettuare l’autenticazione.
 
 ---
 
-### Reset del PIN
+### PIN dimenticato
 
-In caso di **PIN dimenticato**, è possibile richiederne il reset:
+In caso di **PIN dimenticato**, è possibile richiederne una copia tramite uno dei seguenti canali:
 
 - Telefonando all’**Helpdesk**:  
-  ☎️ 071 8063000, interno 3
+  ☎️ 071 8063000, interno 1
 
 - Scrivendo a:  
   📧 [cittadinanza.digitale@regione.marche.it](mailto:cittadinanza.digitale@regione.marche.it)
@@ -60,12 +60,12 @@ In caso di **PIN dimenticato**, è possibile richiederne il reset:
 
 ### Richiesta del PIN per credenziali già esistenti
 
-Gli utenti in possesso delle sole credenziali **Codice Fiscale + Password** possono richiedere l’aggiunta del **PIN**, necessario per accedere ai servizi che richiedono un livello di autenticazione significativo, **purché rientrino nei casi previsti dalla normativa vigente**.
+Gli utenti in possesso delle sole credenziali **Codice Fiscale + Password** possono richiedere l’aggiunta del **PIN**, necessario per accedere ai servizi che richiedono un livello di autenticazione significativo, **purché rientrino nei casi previsti dalla normativa vigente** (***vedi riquadro “Attenzione” all’inizio della pagina***).
 
 La procedura può essere avviata attraverso uno dei seguenti canali:
 
 - Contattando l’**Helpdesk**:  
-  ☎️ 071 8063000, interno 3
+  ☎️ 071 8063000, interno 1
 
 - Scrivendo a:  
   📧 [cittadinanza.digitale@regione.marche.it](mailto:cittadinanza.digitale@regione.marche.it)
