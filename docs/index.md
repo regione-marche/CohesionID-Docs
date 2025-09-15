@@ -16,7 +16,7 @@ Cohesion supporta diversi livelli di autenticazione sicura: basso, significativo
 ## **Con quali modalità è possibile accedere con Cohesion?**
 ![Progetto senza titolo](images/banner_auth.png)
 
-Cohesion supporta tutti i principali sistemi di autenticazione e di identificazione digitale verso i sistemi della PA, previsti dal Codice dell’Amministrazione Digitale (decreto legislativo 7 marzo 2005, n. 82). I cittadini possono accedere tramite le loro credenziali SPID, con la loro Carta di Identità Elettronica (CIE-ID), Tramite CNS e tramite il nodo italiano eIDAS. Ulteriori informazioni circa le due modalità di accesso principali sono reperibili all’indirizzo: [Cohesion](https://www.regione.marche.it/Regione-Utile/Agenda-Digitale/Cittadinanza-digitale/Cohesion.)
+Cohesion supporta tutti i principali sistemi di autenticazione e di identificazione digitale verso i sistemi della PA, previsti dal Codice dell’Amministrazione Digitale (decreto legislativo 7 marzo 2005, n. 82). I cittadini possono accedere tramite le loro credenziali SPID, con la loro Carta di Identità Elettronica (CIE-ID), Tramite CNS e tramite il nodo italiano eIDAS. Ulteriori informazioni circa le due modalità di accesso principali sono reperibili all’indirizzo: [Cohesion](https://www.regione.marche.it/Regione-Utile/Agenda-Digitale/Cittadinanza-digitale/Cohesion)
 
 ## **Accedere con SPID**
 Il _Sistema Pubblico di Identità Digitale (SPID)_ è un’identità digitale composta da una coppia di credenziali (username e password), strettamente personali, con le quali è possibile accedere ai servizi online della pubblica amministrazione e dei privati aderenti. 
