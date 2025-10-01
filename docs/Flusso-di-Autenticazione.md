@@ -90,6 +90,11 @@ GVzaGVldD4NCgk8L2F1dGg+DQo8L2RzQXV0aD4
 ## **Cosa contiene il token Cohesion dopo l'autenticazione?**
 
 Dopo l'autenticazione dell'utente, Cohesion effettua una chiamata **POST** all'indirizzo specificato in **url_validate** nel cui body verrà specificato un token di autenticazione. 
+
+!!! danger "ATTENZIONE"
+    Per una corretta gestione della procedura di autenticazione, è necessario verificare che le informazioni ricevute tramite l'indirizzo speficato nel parametro `url_validate` provengano esclusivamente dal dominio **https://cohesion2.regione.marche.it/**.  
+    In caso contrario, i dati non devono essere considerati validi ai fini dell’identificazione dell’utente.
+
 Nel body ci sarà un elemento *auth* codificato in base64 e URL Encoded che conterrà un XML di questo tipo:
 
 ```xml
@@ -122,7 +127,7 @@ Queste informazioni contengono solamente il codice fiscale dell'utente, ma non i
 
 !!! danger "ATTENZIONE"
 
-    **L'applicazione integrante è tenuta a verificare il livello di accesso indicato nel token ricevuto al termine della procedura di login, al fine di garantire che sia conforme a quanto previsto dal livello di autenticazione configurato.**
+    L'applicazione integrante è tenuta a verificare il livello di accesso indicato nel token ricevuto al termine della procedura di login, al fine di garantire che sia conforme a quanto previsto dal livello di autenticazione configurato.
 
 Per ottenere gli attributi completi, è necessario effettuare una chiamata GET o POST all'indirizzo [https://cohesion2.regione.marche.it/SPManager/webCheckSessionSSO.aspx](https://colab.research.google.com/corgiredirector?site=https%3A%2F%2Fcohesion2.regione.marche.it%2FSPManager%2FwebCheckSessionSSO.aspx) con i seguenti parametri:
 
