@@ -41,10 +41,15 @@ Ad esempio, impostando il parametro come
 
 !!! danger " ATTENZIONE"
 
-    **L'applicazione integrante è tenuta a verificare il livello di accesso indicato nel token ricevuto al termine della procedura di login, al fine di garantire che sia conforme a quanto previsto dal livello di autenticazione configurato.**
+    L'applicazione integrante è tenuta a verificare il livello di accesso indicato nel token ricevuto al termine della procedura di login, al fine di garantire che sia conforme a quanto previsto dal livello di autenticazione configurato.
 
 ## **URL di reindirizzamento**
 L'URL al quale l'utente sarà reindirizzato dopo aver effettuato l'autenticazione.
+
+!!! danger "ATTENZIONE"
+    Per una corretta gestione della procedura di autenticazione, è necessario verificare che le informazioni ricevute tramite l'indirizzo speficato nel parametro `url_validate` provengano esclusivamente dal dominio **https://cohesion2.regione.marche.it/**.  
+    In caso contrario, i dati non devono essere considerati validi ai fini dell’identificazione dell’utente.
+
 ## **`UType`**
 Specifica la tipologia di utente che accede tramite Cohesion. Si distinguono 3 differenti tipologie:
 
