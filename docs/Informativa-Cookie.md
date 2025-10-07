@@ -11,7 +11,7 @@ Modalità di gestione del sito in riferimento al trattamento dei dati personali 
 
 ## 1. Perché questo avviso
 
-Si tratta di un'informativa che è resa, ai sensi dell'art. 13 del d.lgs. n. 196/2003 - Codice in materia di protezione dei dati personali, a coloro che interagiscono in generale con il framework di autenticazione Cohesion id e con i siti della Regione Marche.
+Si tratta di un'informativa che è resa, ai sensi dell'art. 13 del Reg UE 679/2016 (GDPR) - Codice in materia di protezione dei dati personali, a coloro che interagiscono in generale con il framework di autenticazione Cohesion id e con i siti della Regione Marche.
 
 L'informativa si ispira anche alla Raccomandazione n. 2/2001, che le autorità europee per la protezione dei dati personali, riunite nel Gruppo istituito dall’art. 29 della direttiva n. 95/46/CE, hanno adottato il 17 maggio 2001 per individuare alcuni requisiti minimi per la raccolta di dati personali online e, in particolare, le modalità, i tempi e la natura delle informazioni che i titolari del trattamento devono fornire agli utenti quando questi si collegano a pagine web, indipendentemente dagli scopi del collegamento.
 
@@ -70,7 +70,7 @@ Anche se viene revocata l’autorizzazione all’utilizzo di cookie di terze par
 
 ### 2.2 Dati forniti volontariamente dall’utente
 
-L'invio facoltativo, esplicito e volontario di posta elettronica, messaggi o qualsiasi tipo di comunicazioni indirizzai recapiti indicati sui portali di Regione Marche  comporta la successiva acquisizione dell'indirizzo del mittente o di eventuali altri dati personali che saranno utilizzati per rispondere alle richieste. Si assicura, che tale trattamento sarà improntato ai principi di correttezza, liceità e trasparenza e di tutela della riservatezza come indicato nel decreto legislativo 196/03.
+L'invio facoltativo, esplicito e volontario di posta elettronica, messaggi o qualsiasi tipo di comunicazioni indirizzai recapiti indicati sui portali di Regione Marche  comporta la successiva acquisizione dell'indirizzo del mittente o di eventuali altri dati personali che saranno utilizzati per rispondere alle richieste. Si assicura, che tale trattamento sarà improntato ai principi di correttezza, liceità e trasparenza e di tutela della riservatezza come indicato nel Regolamento (UE) 2016/679 (GDPR).
 Specifiche informative di sintesi verranno progressivamente riportate o visualizzate nelle pagine dei siti predisposte per particolari servizi a richiesta. 
 
 ## 3. Il Titolare del trattamento
@@ -95,7 +95,7 @@ Specifiche misure di sicurezza sono osservate per prevenire la perdita dei dati,
 
 ## 6. Diritti degli interessati
 
-Ai sensi dell’art. 7 del d.lgs. n. 196/2003, il soggetto cui si riferiscono i dati personali, ha il diritto di:
+Ai sensi degli artt. 15 – 22 del Regolamento (UE) 2016/679 (GDPR), il soggetto cui si riferiscono i dati personali, ha il diritto di:
 
 **ottenere la conferma dell'esistenza o meno di dati che lo riguardano,** anche se non ancora registrati, e la loro comunicazione in forma intelligibile.
 
@@ -104,7 +104,7 @@ Ai sensi dell’art. 7 del d.lgs. n. 196/2003, il soggetto cui si riferiscono i 
 1. dell'origine dei dati personali;
 2. delle finalità e modalità del trattamento;
 3. della logica applicata in caso di trattamento effettuato con l'ausilio di strumenti elettronici;
-4. degli estremi identificativi del titolare, dei responsabili e del rappresentante designato ai sensi dell'articolo 5, comma 2;
+4. degli estremi identificativi del titolare, dei responsabili e del rappresentante designato ai sensi dell'articolo 27 del GDPR;
 5. dei soggetti o delle categorie di soggetti ai quali i dati personali possono essere comunicati o che possono venirne a conoscenza in qualità di rappresentante designato nel territorio dello Stato, di responsabili o incaricati.
 
 **di ottenere:**
