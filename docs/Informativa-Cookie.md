@@ -27,7 +27,7 @@ I siti della Regione Marche utilizzano alcuni cookie per rendere i propri serviz
 
 #### 2.1.2 Cookie utilizzati
 
-I siti della Regione Marche utilizzano solo cookie tecnici di due tipi: cookie di sessione per l’autenticazione e cookie di monitoraggio (Google Analytics). 
+I siti della Regione Marche utilizzano solo cookie tecnici di due tipi: cookie di sessione per l’autenticazione e cookie di monitoraggio gestiti tramite applicazioni di tracciamento installate presso il **datacenter regionale** (*Matomo*). 
 
 - ***Cookie di sessione***
 
@@ -35,11 +35,19 @@ I cookie di sessione utilizzati sono indispensabili per gestire l’autenticazio
 
 La disabilitazione di questi cookie non consente l’utilizzo della parte riservata del portale.
 
-- ***Cookie analitici/di monitoraggio di terze parti***
+- ***Cookie di monitoraggio (Matomo)***
 
-Nessun dato personale degli utenti viene in proposito acquisito dal sito. Non viene fatto uso di cookie per la trasmissione di informazioni di carattere personale, né vengono utilizzati cookie persistenti di alcun tipo, ovvero sistemi per il tracciamento degli utenti. L'uso di cookie di sessione (che non vengono memorizzati in modo persistente sul computer dell'utente e svaniscono con la chiusura del browser) è strettamente limitato alla trasmissione di identificativi di sessione (costituiti da numeri casuali generati dal server) necessari per consentire l'esplorazione sicura ed efficiente del sito. I cookie di sessione utilizzati in questo sito evitano il ricorso ad altre tecniche informatiche potenzialmente pregiudizievoli per la riservatezza della navigazione degli utenti e non consentono l'acquisizione di dati personali identificativi dell'utente. L'utilizzo di cookie permanenti è strettamente limitato all'acquisizione di dati statistici relativi all'accesso al sito.
+Per finalità statistiche e di analisi dell’utilizzo dei propri servizi web, i siti della Regione Marche utilizzano **Matomo**, un software open source di web analytics installato e gestito **esclusivamente presso l’infrastruttura regionale**.  
+Matomo **non trasmette dati a soggetti terzi**, non utilizza cookie di profilazione e adotta meccanismi di **anonimizzazione degli indirizzi IP e dei tracciamenti**.
+I dati raccolti vengono trattati in forma **aggregata e anonima**, al solo scopo di migliorare i servizi offerti e monitorare il corretto funzionamento dei siti istituzionali.  
 
-Per scopi statistici, il sito si avvale di un prodotto per la rilevazione degli accessi. In particolare, il sito utilizza Matomo, un software open source di analisi web che garantisce piena compatibilità con le leggi europee relative alla protezione dei dati. Per analizzare i punti di maggiore interesse dei siti visitati dall’utente, Matomo utilizza i cookie a scopi statistici e raccoglie informazioni in sola forma aggregata. Sul sito di Web Analytics Italia è possibile consultare la policy relativa alla privacy.
+L’utilizzo di Matomo in questa configurazione è conforme alle **linee guida del Garante per la protezione dei dati personali del 10 giugno 2021** e non richiede il consenso preventivo dell’utente.
+
+- ***Cookie permanenti o di terze parti***
+
+I siti della Regione Marche **non utilizzano cookie di profilazione o di terze parti**.  
+Non vengono quindi installati strumenti di tracciamento di soggetti esterni (come, ad esempio, social network o piattaforme pubblicitarie).
+
 
 #### 2.1.3 Siti web e servizi di terze parti
 
