@@ -24,19 +24,6 @@ jobs:
     - name: Build MkDocs
       run: mkdocs build --config-file mkdocs.yml
 
-    - name: Apply cache busting to static assets
-      run: |
-        find site/ -type f \( -name "*.css" -o -name "*.js" \) | while read file; do
-          hash=$(md5sum "$file" | cut -d ' ' -f1)
-          dir=$(dirname "$file")
-          base=$(basename "$file")
-          ext="${base##*.}"
-          name="${base%.*}"
-          newname="${name}-${hash}.${ext}"
-          mv "$file" "$dir/$newname"
-          find site/ -type f -name "*.html" -exec sed -i "s/${base}/${newname}/g" {} \;
-        done
-
     - name: Commit and push changes
       run: |
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
