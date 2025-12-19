@@ -64,6 +64,7 @@ nav:
         - Integrazione Java: Integrazione-Servlet-Java.md
         - Integrazione PHP: https://github.com/regione-marche/Cohesion2PHPLibrary
         - Integrazione Phyton: https://github.com/regione-marche/Cohesion2PythonIntegrationTest
+        - Certificato Client: Certificato-Client.md
         - Rinnovo del Token: Rinnovo-del-Token.md
         - Configuratore integrazioni: https://colab.research.google.com/gist/xavbeta/f710b69eba7843c006ff11e561e1c2c1/configurazione-integrazione-cohesion.ipynb
   - Credenziali Cohesion id: Richiesta-Credenziali-Cohesion.md
