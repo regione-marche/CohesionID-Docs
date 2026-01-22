@@ -7,10 +7,9 @@ Verrà in dettaglio descritta la procedura di installazione in ambiente Java Ser
 
 > **[Scarica la versione per java8 e successive](https://github.com/regione-marche/Cohesion2Servlet/blob/main/CohesionServlet-3.0.zip?raw=true)**
 
-> **[Scarica il keystore valido a partire dal 16/02/2022](https://github.com/regione-marche/Cohesion2Servlet/blob/main/Keystore_java.zip?raw=true)**
+> **[Scarica il keystore valido a partire dal 11/12/2025](https://github.com/user-attachments/files/24789755/Keystore_java.zip)**
 
 
-***
 
 
 ## **Prerequisiti**:
