@@ -6,11 +6,11 @@
 | CIE       |L1       |LoA2   |PW                   |https://idserver.servizicie.interno.gov.it/idp/profile/SAML2/POST/SSO |Uguale al precedente|https://www.spid.gov.it/SpidL1
 | CIE       |L2       |LoA3   |PIN                  |https://idserver.servizicie.interno.gov.it/idp/profile/SAML2/POST/SSO |Uguale al precedente|https://www.spid.gov.it/SpidL2
 | CIE       |L3       |LoA4   |CF                   |https://idserver.servizicie.interno.gov.it/idp/profile/SAML2/POST/SSO |Uguale al precedente|https://www.spid.gov.it/SpidL3
-| cf+psw    |L1       |LoA2   |PW                   |cohesion2.regione.marche.it:idp                                       |Uguale al precedente|urn:oasis:names:tc:SAML:2.0:ac:classes:**Password**
-| cf+psw+pin|L2       |LoA3   |PIN                  |cohesion2.regione.marche.it:idp                                       |Uguale al precedente|urn:oasis:names:tc:SAML:2.0:ac:classes:**Smartcard**
-| cf+psw+otp|L2       |LoA3   |PIN                  |cohesion2.regione.marche.it:idp                                       |Uguale al precedente|urn:oasis:names:tc:SAML:2.0:ac:classes:Smartcard
-| DOMINIO   |L1       |LoA2   |DRM                 |cohesion2.regione.marche.it:idp                                       |Uguale al precedente|urn:oasis:names:tc:SAML:2.0:ac:classes:Kerberos
-| CNS       |L2      |LoA3    |CF                  |cohesion2.regione.marche.it:sp |Uguale al precedente|urn:oasis:names:tc:SAML:2.0:ac:classes:SmartcardPKI |
+| cf+psw    |L1       |LoA2   |PW                   |cohesion2.regione.marche.it:idp                                       |Uguale al precedente|urn:oasis:names:tc:SAML:2.0:ac:classes:X509
+| cf+psw+pin|L2       |LoA3   |PIN                  |cohesion2.regione.marche.it:idp                                       |Uguale al precedente|urn:oasis:names:tc:SAML:2.0:ac:classes:X509
+| cf+psw+otp|L2       |LoA3   |PIN                  |cohesion2.regione.marche.it:idp                                       |Uguale al precedente|urn:oasis:names:tc:SAML:2.0:ac:classes:X509
+| DOMINIO   |L1       |LoA2   |DRM                 |cohesion2.regione.marche.it:idp                                       |Uguale al precedente|urn:oasis:names:tc:SAML:2.0:ac:classes:X509
+| CNS       |L2      |LoA3    |CF                  |cohesion2.regione.marche.it:sp |Uguale al precedente|urn:oasis:names:tc:SAML:2.0:ac:classes:X509 |
 |eIDAS     |L1/2/3   |LoA2/3/4| CF                 |https://sp-proxy.pre.eid.gov.it/spproxy/idpit|Uguale al precedente|https://www.spid.gov.it/SpidL1-2-3 |
 
 
