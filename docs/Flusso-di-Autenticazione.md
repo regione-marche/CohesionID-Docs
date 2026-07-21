@@ -3,6 +3,11 @@
 
 L'utente desidera effettuare l'accesso ad un'applicazione che integra il sistema Cohesion, cliccando sul _login_ viene reindirizzato al sistema Cohesion ID.
 
+!!! danger "ATTENZIONE"
+    Il reindirizzamento verso la pagina di autenticazione Cohesion ID deve essere avviato esclusivamente a seguito di un’azione esplicita dell’utente, ad esempio mediante la selezione del pulsante “Accedi” o “Accedi con Cohesion ID” presente nel sistema integrato.      
+	I sistemi integrati non devono reindirizzare automaticamente l’utente verso la pagina WAYF di Cohesion ID al semplice accesso alla homepage, a una pagina pubblica o a una risorsa che non richieda autenticazione.
+
+
 ## **2. L'utente sceglie l'IdP**
 
 L'utente seleziona l'_Identity Provider_ per effettuare la procedura di riconoscimento. 
