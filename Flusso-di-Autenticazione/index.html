@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -30,7 +30,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -1430,6 +1430,11 @@ Hai bisogno di assistenza con Cohesion? <a href="mailto:integrazioneCohesion@reg
 <h1 id="flusso-di-autenticazione"><strong>Flusso di Autenticazione</strong><a class="headerlink" href="#flusso-di-autenticazione" title="Permanent link">&para;</a></h1>
 <h2 id="1-lutente-richiede-di-effettuare-il-login"><strong>1. L'utente richiede di effettuare il login</strong><a class="headerlink" href="#1-lutente-richiede-di-effettuare-il-login" title="Permanent link">&para;</a></h2>
 <p>L'utente desidera effettuare l'accesso ad un'applicazione che integra il sistema Cohesion, cliccando sul <em>login</em> viene reindirizzato al sistema Cohesion ID.</p>
+<div class="admonition danger">
+<p class="admonition-title">ATTENZIONE</p>
+<p>Il reindirizzamento verso la pagina di autenticazione Cohesion ID deve essere avviato esclusivamente a seguito di un’azione esplicita dell’utente, ad esempio mediante la selezione del pulsante “Accedi” o “Accedi con Cohesion ID” presente nel sistema integrato.    <br />
+I sistemi integrati non devono reindirizzare automaticamente l’utente verso la pagina WAYF di Cohesion ID al semplice accesso alla homepage, a una pagina pubblica o a una risorsa che non richieda autenticazione.</p>
+</div>
 <h2 id="2-lutente-sceglie-lidp"><strong>2. L'utente sceglie l'IdP</strong><a class="headerlink" href="#2-lutente-sceglie-lidp" title="Permanent link">&para;</a></h2>
 <p>L'utente seleziona l'<em>Identity Provider</em> per effettuare la procedura di riconoscimento. 
 Cohesion genera una richiesta di accesso in cui ottiene il <strong>Codice Fiscale</strong> e l'<strong>ID Sessione</strong> dell'utente.</p>
@@ -1707,7 +1712,7 @@ In caso contrario, i dati non devono essere considerati validi ai fini dell’id
       <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["announce.dismiss", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.footer"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>
