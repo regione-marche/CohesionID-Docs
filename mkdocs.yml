@@ -68,7 +68,11 @@ nav:
         - Rinnovo del Token: Rinnovo-del-Token.md
         - Configuratore integrazioni: https://colab.research.google.com/gist/xavbeta/f710b69eba7843c006ff11e561e1c2c1/configurazione-integrazione-cohesion.ipynb
   - Credenziali Cohesion id: Richiesta-Credenziali-Cohesion.md
-  - FAQ: FAQ.md 
+  - FAQ:
+    - FAQ: FAQ.md
+    - Accesso e credenziali: FAQ/Accesso-e-credenziali.md
+    - Integrazione tecnica: FAQ/Integrazione-Tecnica.md
+    - Enti e gestione dei servizi: FAQ/Enti-e-gestione-servizi.md
 
 docs_dir: docs
 site_dir: site
